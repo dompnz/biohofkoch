@@ -1,0 +1,7 @@
+@use "./abstracts" as *;
+@use "fonts.scss";
+
+html,
+body {
+	font-family: $font-family-default;
+}

@@ -1,8 +1,9 @@
 import Head from "next/head"
 import { attributes, react as HomeContent } from "../content/home.md"
+import styles from "../styles/pages/homepage.module.scss"
 
 export default function Home() {
 	console.log(attributes)
 
-	return <div className="text-purple-400">test</div>
+	return <div className="">The quick brown fox jumps over a lazy dog.</div>
 }

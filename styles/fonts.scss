@@ -1,0 +1,51 @@
+@use "./abstracts" as *;
+
+$font-display-default: swap;
+
+// url encoded value for the characters you use so we only download those. https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests
+// add missing characters with this: https://www.urlencoder.org/
+$font-google-api-text-param: "1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20%22%27%C3%A4%C3%B6%C3%BC%C3%84%C3%96%C3%9C";
+
+$font-path-zooja: "/assets/fonts/zooja";
+$font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
+
+// Zooja Light Pro + Zooja Pro: You must credit the author Copy this link on your web
+// <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div> or
+// <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+
+// Zooja Light Pro from https://www.onlinewebfonts.com/download/0a4a5e68b7929fb9a01c2b5533f79641
+@font-face {
+	font-family: $font-family-name-zooja;
+	font-style: normal;
+	font-weight: $font-weight-light;
+	font-display: $font-display-default;
+	src: local("Zooja Light Pro"), url("#{$font-path-zooja}/Zooja_Light_Pro.woff2") format("woff2"),
+		url("#{$font-path-zooja}/Zooja_Light_Pro.ttf") format("truetype");
+}
+
+// Zooja Pro from https://www.onlinewebfonts.com/download/d9eab5143efc98cbd074fe4083108c58
+@font-face {
+	font-family: $font-family-name-zooja;
+	font-style: normal;
+	font-weight: $font-weight-regular;
+	font-display: $font-display-default;
+	src: local("Zooja Pro"), url("#{$font-path-zooja}/Zooja_Pro.woff2") format("woff2"), url("#{$font-path-zooja}/Zooja_Pro.ttf") format("truetype");
+}
+
+// M PLUS Rounded 1c from https://fonts.google.com/specimen/M+PLUS+Rounded+1c
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&text=#{$font-google-api-text-param}");
+/*@font-face {
+	font-family: $font-family-name-mplus;
+	font-style: normal;
+	font-weight: $font-weight-regular;
+	font-display: $font-display-default;
+	src: local("M PLUS Rounded 1c"), url("#{$font-path-m-plus}/MPLUSRounded1c-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: $font-family-name-mplus;
+	font-style: normal;
+	font-weight: $font-weight-extra-bold;
+	font-display: $font-display-default;
+	src: local("M PLUS Rounded 1c"), url("#{$font-path-m-plus}/MPLUSRounded1c-ExtraBold.ttf") format("truetype");
+}*/
