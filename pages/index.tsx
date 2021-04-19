@@ -5,5 +5,5 @@ import styles from "../styles/pages/homepage.module.scss"
 export default function Home() {
 	console.log(attributes)
 
-	return <div className="">The quick brown fox jumps over a lazy dog.</div>
+	return <div>This is the homepage</div>
 }
