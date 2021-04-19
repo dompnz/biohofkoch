@@ -3,5 +3,10 @@
 
 html,
 body {
-	font-family: $font-family-default;
+	@apply font-sans text-gray-dark;
+}
+
+h1,
+h2 {
+	@apply font-handwriting;
 }
