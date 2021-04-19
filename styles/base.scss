@@ -1,0 +1,14 @@
+// base styles
+
+::selection {
+	@apply text-white bg-black;
+}
+
+:focus {
+	outline: 2px dotted #000;
+	outline-offset: 2px;
+
+	&:not(:focus-visible) {
+		outline: none; // remove focus styles for browsers that support it
+	}
+}
