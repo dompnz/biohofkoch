@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
 import Link from "next/link"
 import { attributes, react as HomeContent } from "../content/home.md"
 import Layout from "../components/layout"
@@ -10,7 +9,7 @@ export default function Home() {
 			<div className="min-h-screen flex flex-col lg:flex-row">
 				{/* background image container */}
 				<div className="bg-blue-400 flex relative h-[40vh] lg:h-auto lg:w-2/3">
-					<Image src="/me.png" layout="fill" alt="Picture of the author" className="w-full h-full object-cover bg-pink-500" />
+					<img src="/me.png" alt="Picture of the author" className="w-full h-full object-cover bg-pink-500" />
 					<img
 						src="/assets/images/logo-with-border.svg"
 						alt="Biohof Koch Logo"
