@@ -7,8 +7,18 @@
 	<title>Biohof Koch CMS</title>
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	<style>
-		button {
-			color: red;
+		/* default login page style fixes / overwrites */
+
+		.notif__container section>span:first-of-type {
+			/* custom logo wrapper */
+			margin: 0 !important;
+			display: flex;
+			justify-content: center;
+		}
+
+		.notif__container section>button:first-of-type {
+			/* login button */
+			margin: 20px 0 0 !important;
 		}
 	</style>
 </head>
