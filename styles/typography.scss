@@ -1,12 +1,2 @@
 @use "./abstracts" as *;
 @use "fonts.scss";
-
-html,
-body {
-	@apply font-sans text-gray-dark;
-}
-
-h1,
-h2 {
-	@apply font-handwriting;
-}

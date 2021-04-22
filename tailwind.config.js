@@ -4,6 +4,22 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			fontFamily: {
+				handwriting: ["Zooja", "cursive"],
+				sans: [
+					'"M PLUS Rounded 1c"',
+					"ui-sans-serif",
+					"system-ui",
+					"-apple-system",
+					"BlinkMacSystemFont",
+					'"Segoe UI"',
+					"Roboto",
+					'"Helvetica Neue"',
+					"Arial",
+					'"Noto Sans"',
+					"sans-serif",
+				],
+			},
 			colors: {
 				gray: {
 					light: "#F0F0F0",
@@ -14,25 +30,18 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				logo: "url('/assets/images/logo.svg')",
 			}),
-		},
-		fontFamily: {
-			handwriting: ["Zooja", "cursive"],
-			sans: [
-				'"M PLUS Rounded 1c"',
-				"ui-sans-serif",
-				"system-ui",
-				"-apple-system",
-				"BlinkMacSystemFont",
-				'"Segoe UI"',
-				"Roboto",
-				'"Helvetica Neue"',
-				"Arial",
-				'"Noto Sans"',
-				"sans-serif",
-			],
+			container: {
+				padding: {
+					DEFAULT: "1rem",
+					sm: "2rem",
+					lg: "4rem",
+					xl: "5rem",
+					"2xl": "6rem",
+				},
+			},
 		},
 		screens: {
-			sm: "640px",
+			sm: "540px",
 			md: "768px",
 			lg: "1024px",
 			xl: "1280px",
