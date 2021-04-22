@@ -4,8 +4,6 @@ import Link from "next/link"
 import { attributes, react as HomeContent } from "../content/home.md"
 import Layout from "../components/layout"
 
-// build test
-
 export default function Home() {
 	return (
 		<Layout showNav={false}>
