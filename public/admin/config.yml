@@ -3,6 +3,12 @@ backend:
   branch: main
 media_folder: public/uploads
 public_folder: uploads
+locale: "de"
+slug:
+  encoding: "ascii"
+  clean_accents: true
+site_url: https://www.biohofkoch.com/
+logo_url: /assets/images/logo.svg
 collections:
   - name: "pages"
     label: "Pages"
@@ -12,11 +18,13 @@ collections:
         file: "content/startseite.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Cats"
-            name: "cats"
-            widget: list
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+      - label: "Platzhalter"
+        name: "platzhalter"
+        file: "content/platzhalter.md"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{,160}", "Maximal 160 Zeichen"] }
+          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image" }
+          - { label: "Kontaktdaten", name: "contactdata", widget: "markdown" }
+          - { label: "Facebook Link", name: "facebooklink", widget: "string" }

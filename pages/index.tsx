@@ -1,9 +1,15 @@
 import Head from "next/head"
 import Link from "next/link"
-import { attributes, react as HomeContent } from "../content/home.md"
+import { useEffect } from "react"
+import { attributes, react as HomeContent } from "../content/platzhalter.md"
 import Layout from "../components/layout"
 
 export default function Home() {
+	useEffect(() => {
+		console.log(attributes)
+		console.log(HomeContent)
+	})
+
 	return (
 		<Layout showNav={false}>
 			<div className="min-h-screen flex flex-col lg:flex-row">
