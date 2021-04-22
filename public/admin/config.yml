@@ -24,7 +24,7 @@ collections:
         file: "content/platzhalter.md"
         fields:
           - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{,160}", "Maximal 160 Zeichen"] }
+          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
           - { label: "Hintergrundbild", name: "backgroundimage", widget: "image" }
           - { label: "Kontaktdaten", name: "contactdata", widget: "markdown" }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
