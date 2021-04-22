@@ -10,8 +10,8 @@ slug:
 site_url: https://www.biohofkoch.com/
 logo_url: /assets/images/logo.svg
 collections:
-  - name: "pages"
-    label: "Pages"
+  - label: "Seiten"
+    name: "pages"
     files:
       - label: "Startseite"
         name: "startseite"
