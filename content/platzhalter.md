@@ -1,6 +1,6 @@
 ---
 title: Biohof Koch - echt saisonales Gemüse aus dem Innviertel
-description: Wir sind ein Bio-Betrieb aus dem Oberen Innviertel und haben mit
+description: Wir sind ein Bio-Betrieb aus dem oberen Innviertel und haben mit
   dem Gemüseanbau begonnen. Wir verkaufen Dinkelprodukte und besonderes Gemüse.
 backgroundimage: uploads/homepage-bg.png
 contactdata: |-
