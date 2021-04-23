@@ -29,12 +29,12 @@ export default function Home() {
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:px-12 lg:py-20 flex flex-col lg:w-1/3">
 					<div className="mt-auto mb-6 lg:mb-16">
-						<h1 className="uppercase font-sans font-extrabold text-sm mb-4">Biohof Koch</h1>
+						<h1 className="font-sans uppercase font-extrabold text-sm mb-4">Biohof Koch</h1>
 						<MarkdownContent />
 					</div>
-					<a href={attributes.facebooklink} target="_blank" className="flex items-center flex-wrap">
-						<img src="/assets/images/facebook.svg" alt="facebook" className="inline mr-5" />
-						<span>Biohof Koch</span>
+					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap">
+						<img src="/assets/images/facebook.svg" alt="facebook icon" className="inline mr-5" />
+						<span className="uppercase font-extrabold text-sm">Biohof Koch</span>
 					</a>
 				</div>
 			</div>

@@ -20,6 +20,10 @@ module.exports = {
 					"sans-serif",
 				],
 			},
+			fontSize: {
+				sm: ["0.875rem", "1.25rem"],
+				base: ["1rem", "1.875rem"],
+			},
 			colors: {
 				gray: {
 					light: "#F0F0F0",
