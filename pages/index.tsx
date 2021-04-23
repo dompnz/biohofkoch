@@ -1,8 +1,6 @@
 import Head from "next/head"
-import Link from "next/link"
 import { useEffect } from "react"
-import { attributes } from "../content/platzhalter.md"
-import ReactMarkdown from "react-markdown"
+import { attributes, react as MarkdownContent } from "../content/platzhalter.md"
 import Layout from "../components/layout"
 
 export default function Home() {
@@ -18,8 +16,8 @@ export default function Home() {
 			</Head>
 			<div className="min-h-screen flex flex-col lg:flex-row">
 				{/* background image container */}
-				<div className="bg-blue-400 flex relative h-[40vh] lg:h-auto lg:w-2/3">
-					<img src={`/${attributes.backgroundimage}`} alt="Hintergrundbild" className="w-full h-full object-cover" />
+				<div className="flex relative h-[40vh] lg:h-auto lg:w-2/3">
+					<img src={`/${attributes.backgroundimage}`} alt="Hintergrundbild" className="absolute w-full h-full object-cover object-top" />
 					<img
 						src="/assets/images/logo-with-border.svg"
 						alt="Biohof Koch Logo"
@@ -30,10 +28,11 @@ export default function Home() {
 				<img src="/assets/images/logo-with-border.svg" alt="Logo Placeholder" className="invisible w-1/4 sm:w-1/6 md:w-1/8 lg:hidden" />
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:px-12 lg:py-20 flex flex-col lg:w-1/3">
-					<div className="mt-auto">
-						<ReactMarkdown children={attributes.body} />
+					<div className="mt-auto mb-6 lg:mb-16">
+						<h1 className="uppercase font-sans font-extrabold text-sm mb-4">Biohof Koch</h1>
+						<MarkdownContent />
 					</div>
-					<a href={attributes.facebooklink} target="_blank" className="mt-6 flex items-center flex-wrap">
+					<a href={attributes.facebooklink} target="_blank" className="flex items-center flex-wrap">
 						<img src="/assets/images/facebook.svg" alt="facebook" className="inline mr-5" />
 						<span>Biohof Koch</span>
 					</a>
