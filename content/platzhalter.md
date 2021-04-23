@@ -5,8 +5,7 @@ description: Wir sind ein Bio-Betrieb aus dem oberen Innviertel und haben mit
 backgroundimage: uploads/homepage-bg.png
 facebooklink: https://www.facebook.com/Biohof-Koch-echt-saisonales-Gem%C3%BCse-aus-dem-Innviertel-108494664222849/
 ---
-
-DI Augustin und Lydia Koch
+DI AUGUSTIN & LYDIA KOCH
 
 [Lindach 4, 5122 Hochburg-Ach](https://goo.gl/maps/bKrKznbMTmFijf5s9)
 
