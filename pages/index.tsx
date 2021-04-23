@@ -2,12 +2,12 @@ import Head from "next/head"
 import Link from "next/link"
 import { useEffect } from "react"
 import { attributes, react as HomeContent } from "../content/platzhalter.md"
+import ReactMarkdown from "react-markdown"
 import Layout from "../components/layout"
 
 export default function Home() {
 	useEffect(() => {
 		console.log(attributes)
-		console.log(HomeContent)
 	})
 
 	return (
@@ -27,6 +27,9 @@ export default function Home() {
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:px-12 lg:py-20 flex flex-col lg:w-1/3">
 					<div className="mt-auto">DI Augustin und Lydia Koch, Lindach 4, 5122 Hochburg-Ach +43 676/821250470 biohofkoch@gmx.at</div>
+					<div>
+						<ReactMarkdown children={attributes.contactdata} />
+					</div>
 					<Link href="/facebook-page">
 						<a className="mt-6 flex items-center flex-wrap">
 							<img src="/assets/images/facebook.svg" alt="facebook" className="inline mr-5" />
