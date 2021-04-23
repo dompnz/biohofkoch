@@ -28,5 +28,5 @@ collections:
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
           - { label: "Hintergrundbild", name: "backgroundimage", widget: "image" }
-          - { label: "Kontaktdaten", name: "contactdata", widget: "markdown" }
+          - { label: "Kontaktdaten", name: "contactdata", widget: "markdown", options: { linkAttrs: { target: _blank, rel: noreferrer noopener } } }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
