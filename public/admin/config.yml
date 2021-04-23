@@ -9,7 +9,8 @@ slug:
   clean_accents: true
 site_url: https://www.biohofkoch.com/
 logo_url: /assets/images/logo.svg
-show_preview_links: false
+extension: "md"
+preview: false
 collections:
   - label: "Seiten"
     name: "pages"
