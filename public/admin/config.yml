@@ -15,12 +15,6 @@ collections:
   - label: "Seiten"
     name: "pages"
     files:
-      - label: "Startseite"
-        name: "startseite"
-        file: "content/startseite.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Platzhalter"
         name: "platzhalter"
         file: "content/platzhalter.md"
@@ -28,6 +22,36 @@ collections:
         fields:
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
-          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image" }
-          - { label: "Kontaktdaten", name: "body", widget: "markdown", options: { linkAttrs: { target: _blank, rel: noreferrer noopener } } }
+          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image", allow_multiple: "true" }
+          - { label: "Kontaktdaten", name: "body", widget: "markdown" }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
+      - label: "Startseite"
+        name: "startseite"
+        file: "content/startseite.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Über uns"
+        name: "ueber-uns"
+        file: "content/ueber-uns.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Süße Knolle"
+        name: "suesse-knolle"
+        file: "content/suesse-knolle.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Hofladen & Bio Kiste"
+        name: "hofladen-bio-kiste"
+        file: "content/hofladen-bio-kiste.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Presseartikel"
+        name: "presseartikel"
+        file: "content/presseartikel.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+      - label: "Kontakt"
+        name: "kontakt"
+        file: "content/kontakt.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
