@@ -7,7 +7,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<div className="font-sans text-gray-dark text-base break-words">
 			<Head>
-				<title></title>
+				<meta property="og:type" content="website" />
+				<meta property="og:locale" content="de_AT" />
 			</Head>
 			<Component {...pageProps} />
 		</div>

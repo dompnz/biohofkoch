@@ -13,6 +13,7 @@ export default function Home() {
 			<Head>
 				<title>{attributes.title}</title>
 				<meta name="description" content={attributes.description} />
+				<meta property="og:image" content={attributes.backgroundimage} />
 			</Head>
 			<div className="min-h-screen flex flex-col lg:flex-row">
 				{/* background image container */}
