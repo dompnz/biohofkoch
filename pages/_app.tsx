@@ -5,7 +5,7 @@ import type { AppProps /*, AppContext */ } from "next/app"
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<div className="font-sans text-gray-dark text-base">
+		<div className="font-sans text-gray-dark text-base break-words">
 			<Head>
 				<title></title>
 			</Head>
