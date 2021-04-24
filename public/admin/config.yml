@@ -22,7 +22,7 @@ collections:
         fields:
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
-          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image", allow_multiple: true }
+          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image", media_library: { config: { multiple: true } } }
           - { label: "Kontaktdaten", name: "body", widget: "markdown" }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
       - label: "Startseite"
@@ -53,5 +53,13 @@ collections:
       - label: "Kontakt"
         name: "kontakt"
         file: "content/kontakt.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+  - label: "SEO"
+    name: "seo"
+    files:
+      - label: "SEO"
+        name: "seo"
+        file: "content/seo.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
