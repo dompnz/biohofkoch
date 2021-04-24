@@ -10,10 +10,10 @@ slug:
 site_url: https://www.biohofkoch.com/
 logo_url: /assets/images/logo.svg
 extension: "md"
-preview: false
 collections:
   - label: "Seiten"
     name: "pages"
+    preview: false
     files:
       - label: "Platzhalter"
         name: "platzhalter"
