@@ -41,7 +41,7 @@ export default function Home() {
 						<MarkdownContent />
 					</div>
 					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
-						<img src="/assets/images/facebook.svg" alt="facebook icon" className="inline mr-5" />
+						<img src="/assets/images/facebook.svg" alt="facebook icon" width="22px" height="22px" className="inline mr-5 object-contain object-center" />
 						<span className="uppercase font-extrabold text-sm tracking-wide animated-underlines-target">Biohof Koch</span>
 					</a>
 				</div>
