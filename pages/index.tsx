@@ -23,7 +23,7 @@ export default function Home() {
 					<img
 						src="/assets/images/logo-with-border-white.svg"
 						alt="Biohof Koch Logo"
-						className="lg:hidden absolute left-1/2 md:left-8 top-full transform -translate-x-1/2 md:translate-x-0 -translate-y-1/2 w-1/3 sm:w-1/4 md:w-1/5 bg-white"
+						className="lg:hidden absolute left-1/2 md:left-8 top-full transform -translate-x-1/2 md:translate-x-0 -translate-y-1/2 w-1/3 sm:w-1/4 md:w-1/5"
 					/>
 					{/* desktop logo */}
 					<img
