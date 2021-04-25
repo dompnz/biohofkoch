@@ -36,13 +36,13 @@ export default function Home() {
 				<img src="/assets/images/logo-with-border.svg" alt="Logo Placeholder" className="invisible w-1/6 sm:w-1/8 md:w-1/10 lg:hidden" />
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:p-12 xl:p-20 flex flex-col lg:w-1/3">
-					<div className="mt-auto mb-6 lg:mb-16">
+					<div className="mt-auto mb-6 lg:mb-16 animated-underlines">
 						<h1 className="font-sans uppercase font-extrabold text-sm tracking-wide mb-4">Biohof Koch</h1>
 						<MarkdownContent />
 					</div>
-					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap">
+					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
 						<img src="/assets/images/facebook.svg" alt="facebook icon" className="inline mr-5" />
-						<span className="uppercase font-extrabold text-sm tracking-wide">Biohof Koch</span>
+						<span className="uppercase font-extrabold text-sm tracking-wide animated-underlines-target">Biohof Koch</span>
 					</a>
 				</div>
 			</div>

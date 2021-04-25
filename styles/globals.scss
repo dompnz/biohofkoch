@@ -1,4 +1,7 @@
+// global css used by the entire app
+
 @use "resets.scss";
 @use 'tailwind.scss';
 @use "typography.scss";
 @use "base.scss";
+@use "helper-classes.scss";

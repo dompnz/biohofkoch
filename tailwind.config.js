@@ -43,6 +43,9 @@ module.exports = {
 					"2xl": "6rem",
 				},
 			},
+			transitionProperty: {
+				width: "width",
+			},
 		},
 		screens: {
 			sm: "540px",
