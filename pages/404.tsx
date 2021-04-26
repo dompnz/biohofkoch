@@ -1,9 +1,13 @@
 import Link from "next/link"
+import Head from "next/head"
 
 export default function Custom404() {
 	return (
-		<div className="flex justify-center items-center">
-			<h1>404 - Seite nicht gefunden</h1>
+		<div className="flex flex-col justify-center items-center h-screen w-screen">
+			<Head>
+				<title>404 - Seite nicht gefunden</title>
+			</Head>
+			<h1 className="text-4xl">404 - Seite nicht gefunden</h1>
 			<Link href="/">
 				<a>Zurück zur Startseite</a>
 			</Link>
