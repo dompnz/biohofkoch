@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { attributes, react as MarkdownContent } from "../content/platzhalter.md"
 import Layout from "../components/layout"
 
-export default function Home() {
+export default function Placeholder() {
 	useEffect(() => {
 		console.log(attributes)
 	})

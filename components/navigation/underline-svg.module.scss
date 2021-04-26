@@ -1,0 +1,20 @@
+.svg {
+	width: 100%;
+}
+
+.path {
+	fill: #262626;
+	fill: transparent;
+	stroke: #262626;
+	$path-total-length: 194; // get this by calling pathElement.getTotalLength() in the browser
+	stroke-dasharray: $path-total-length;
+	stroke-dashoffset: $path-total-length;
+	animation: draw 1s ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+	}
+}

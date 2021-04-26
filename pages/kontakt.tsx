@@ -1,3 +1,9 @@
+import Layout from "../components/layout"
+
 export default function Page() {
-	return <div></div>
+	return (
+		<Layout>
+			<div></div>
+		</Layout>
+	)
 }
