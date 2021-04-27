@@ -64,7 +64,7 @@ collections:
         file: "content/footer.md"
         fields:
           - { label: "Kontakt Titel 1", name: "contacttitle1", widget: "string" }
-          - { label: "Kontaktdaten", name: "contacttext", widget: "markdown" }
+          - { label: "Kontaktdaten", name: "contacttext", widget: "markdown", modes: ["raw"], editor_components: [] }
           - { label: "Kontakt Titel 2", name: "contacttitle2", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Telefonnummer", name: "tel", widget: "string" }
