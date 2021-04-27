@@ -30,32 +30,32 @@ collections:
         name: "startseite"
         file: "content/startseite.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
       - label: "Über uns"
         name: "ueber-uns"
         file: "content/ueber-uns.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
       - label: "Süße Knolle"
         name: "suesse-knolle"
         file: "content/suesse-knolle.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
       - label: "Hofladen & Gemüsekiste"
         name: "hofladen-gemuesekiste"
         file: "content/hofladen-gemuesekiste.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
       - label: "Presseartikel"
         name: "presseartikel"
         file: "content/presseartikel.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
       - label: "Kontakt"
         name: "kontakt"
         file: "content/kontakt.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
   - label: "Allgemein"
     name: "general"
     files:
@@ -63,12 +63,11 @@ collections:
         name: "footer"
         file: "content/footer.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Kontaktdaten", name: "contactdata", widget: "text" }
-          - { label: "Standort", name: "location", widget: "map" }
-          - { label: "Kontakt Titel", name: "contacttitle", widget: "string" }
-          - { label: "Email", name: "email", widget: "text" }
-          - { label: "Telefonnummer", name: "tel", widget: "text" }
+          - { label: "Kontakt Titel 1", name: "contacttitle1", widget: "string" }
+          - { label: "Kontaktdaten", name: "contacttext", widget: "markdown" }
+          - { label: "Kontakt Titel 2", name: "contacttitle2", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Telefonnummer", name: "tel", widget: "string" }
           - { label: "Facebook Titel", name: "facebooktitle", widget: "string" }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
       - label: "SEO"

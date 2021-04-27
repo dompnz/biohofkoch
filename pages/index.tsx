@@ -40,7 +40,7 @@ export default function Placeholder() {
 						<h1 className="subheader text-sm mb-4">Biohof Koch</h1>
 						<MarkdownContent />
 					</div>
-					<a href={attributes.facebooklink_placeholder} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
+					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
 						<img src="/assets/images/facebook.svg" alt="facebook icon" width="22px" height="22px" className="inline mr-5 object-contain object-center" />
 						<span className="subheader text-sm animated-underlines-target">Biohof Koch</span>
 					</a>
