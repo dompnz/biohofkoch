@@ -5,7 +5,7 @@
 }
 
 :focus {
-	outline: 2px dotted #000;
+	outline: 2px dotted hsl(0, 0%, 0%);
 	outline-offset: 2px;
 
 	&:not(:focus-visible) {

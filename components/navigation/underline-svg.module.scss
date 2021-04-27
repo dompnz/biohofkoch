@@ -11,7 +11,7 @@
 	$path-total-length: 106; // get this by calling pathElement.getTotalLength() in the browser
 	stroke-dasharray: $path-total-length;
 	stroke-dashoffset: $path-total-length;
-	animation: drawStroke 1s ease;
+	animation: drawStroke 0.5s ease;
 	animation-fill-mode: forwards;
 }
 

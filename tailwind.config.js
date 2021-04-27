@@ -19,6 +19,7 @@ module.exports = {
 					'"Noto Sans"',
 					"sans-serif",
 				],
+				mono: ["IBM Plex Mono", "monospace"],
 			},
 			fontSize: {
 				sm: ["0.875rem", "1.25rem"],

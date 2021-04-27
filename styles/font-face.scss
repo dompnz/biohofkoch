@@ -1,5 +1,6 @@
 @use "./abstracts" as *;
 
+$font-family-name-zooja: "Zooja"; // can be anything since we self host this
 $font-display-default: swap;
 
 // url encoded value for the characters you use so we only download those. https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests
@@ -17,7 +18,7 @@ $font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
 @font-face {
 	font-family: $font-family-name-zooja;
 	font-style: normal;
-	font-weight: $font-weight-light;
+	font-weight: 300;
 	font-display: $font-display-default;
 	src: local("Zooja Light Pro"), url("#{$font-path-zooja}/Zooja_Light_Pro.woff2") format("woff2"),
 		url("#{$font-path-zooja}/Zooja_Light_Pro.ttf") format("truetype");
@@ -27,13 +28,17 @@ $font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
 @font-face {
 	font-family: $font-family-name-zooja;
 	font-style: normal;
-	font-weight: $font-weight-regular;
+	font-weight: 400;
 	font-display: $font-display-default;
 	src: local("Zooja Pro"), url("#{$font-path-zooja}/Zooja_Pro.woff2") format("woff2"), url("#{$font-path-zooja}/Zooja_Pro.ttf") format("truetype");
 }
 
 // M PLUS Rounded 1c from https://fonts.google.com/specimen/M+PLUS+Rounded+1c
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=#{$font-display-default}&text=#{$font-google-api-text-param}");
+
+// IBM Plex Mono from https://fonts.google.com/specimen/IBM+Plex+Mono
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=#{$font-display-default}&text=#{$font-google-api-text-param}");
+
 /*@font-face {
 	font-family: $font-family-name-mplus;
 	font-style: normal;

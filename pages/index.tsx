@@ -5,11 +5,11 @@ import Layout from "../components/layout"
 
 export default function Placeholder() {
 	useEffect(() => {
-		console.log(attributes)
+		console.log(MarkdownContent)
 	})
 
 	return (
-		<Layout showNav={false}>
+		<Layout showNav={false} showFooter={false}>
 			<Head>
 				<title>{attributes.title}</title>
 				<meta name="description" content={attributes.description} />
@@ -37,12 +37,12 @@ export default function Placeholder() {
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:p-12 xl:p-20 flex flex-col lg:w-1/3">
 					<div className="mt-auto mb-6 lg:mb-16 animated-underlines">
-						<h1 className="font-sans uppercase font-extrabold text-sm tracking-wide mb-4">Biohof Koch</h1>
+						<h1 className="subheader text-sm mb-4">Biohof Koch</h1>
 						<MarkdownContent />
 					</div>
 					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
 						<img src="/assets/images/facebook.svg" alt="facebook icon" width="22px" height="22px" className="inline mr-5 object-contain object-center" />
-						<span className="uppercase font-extrabold text-sm tracking-wide animated-underlines-target">Biohof Koch</span>
+						<span className="subheader text-sm animated-underlines-target">Biohof Koch</span>
 					</a>
 				</div>
 			</div>

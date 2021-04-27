@@ -30,14 +30,17 @@ const navItems = [
 export default function Navigation() {
 	const router = useRouter()
 	let isMobileNavOpen = false
+	const toggleButton = useRef(null)
 	const mobileMenu = useRef(null)
 
 	const openMobileNav = () => {
 		mobileMenu.current.classList.remove("hidden")
+		toggleButton.current.classList.add("closed")
 	}
 
 	const closeMobileNav = () => {
 		mobileMenu.current.classList.add("hidden")
+		toggleButton.current.classList.remove("closed")
 	}
 
 	const toggleMobileNav = () => {
@@ -45,9 +48,7 @@ export default function Navigation() {
 		isMobileNavOpen = !isMobileNavOpen
 	}
 
-	useEffect(() => {
-		console.log(router)
-	})
+	useEffect(() => {})
 
 	return (
 		<nav className="bg-yellow-300 w-full fixed z-20">
@@ -61,8 +62,8 @@ export default function Navigation() {
 					{navItems.map((navItem) => {
 						const isCurrentPath = router.route === "/" + navItem.path
 						return (
-							<span className="relative ml-6 font-extrabold">
-								<Link href={`/${navItem.path}`} key={navItem.path}>
+							<span key={navItem.path} className="relative ml-6 font-extrabold">
+								<Link href={`/${navItem.path}`}>
 									<a>{navItem.name}</a>
 								</Link>
 								<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
@@ -76,8 +77,8 @@ export default function Navigation() {
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (
-								<span className="relative mb-6 last:mb-0 font-extrabold">
-									<Link href={`/${navItem.path}`} key={navItem.path}>
+								<span key={navItem.path} className="relative mb-6 last:mb-0 font-extrabold">
+									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
 									<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
@@ -88,7 +89,8 @@ export default function Navigation() {
 				</div>
 				{/* burger button menu */}
 				<button
-					className="lg:hidden relative h-4 w-4 z-20"
+					ref={toggleButton}
+					className="lg:hidden relative h-4 w-8 z-20"
 					onClick={() => {
 						toggleMobileNav()
 					}}
