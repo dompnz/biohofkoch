@@ -1,5 +1,10 @@
 ---
 contacttitle1: Biohof Koch
+contacttext: |-
+  DI Augustin & Lydia Koch\
+  Lindach 4 5122\
+  Hochburg-Ach\
+  AUSTRIA
 contacttitle2: Fragen?
 email: biohofkoch@gmx.at
 tel: +43 676 / 821 250 470
