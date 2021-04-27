@@ -56,9 +56,21 @@ collections:
         file: "content/kontakt.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-  - label: "SEO"
-    name: "seo"
+  - label: "Allgemein"
+    name: "general"
     files:
+      - label: "Footer"
+        name: "footer"
+        file: "content/footer.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Kontaktdaten", name: "contactdata", widget: "text" }
+          - { label: "Standort", name: "location", widget: "map" }
+          - { label: "Kontakt Titel", name: "contactdata", widget: "string" }
+          - { label: "Email", name: "email", widget: "text" }
+          - { label: "Telefonnummer", name: "tel", widget: "text" }
+          - { label: "Facebook Titel", name: "facebooklink", widget: "string" }
+          - { label: "Facebook Link", name: "facebooklink", widget: "string" }
       - label: "SEO"
         name: "seo"
         file: "content/seo.md"
