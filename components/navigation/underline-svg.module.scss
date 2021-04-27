@@ -5,15 +5,18 @@
 .path {
 	fill: #262626;
 	fill: transparent;
-	stroke: #262626;
+	stroke: #161615;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: 2px;
 	$path-total-length: 194; // get this by calling pathElement.getTotalLength() in the browser
 	stroke-dasharray: $path-total-length;
 	stroke-dashoffset: $path-total-length;
-	animation: draw 1s ease;
+	animation: drawStroke 1s ease;
 	animation-fill-mode: forwards;
 }
 
-@keyframes draw {
+@keyframes drawStroke {
 	to {
 		stroke-dashoffset: 0;
 	}
