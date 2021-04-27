@@ -69,7 +69,7 @@ collections:
           - { label: "Kontakt Titel", name: "contactdata", widget: "string" }
           - { label: "Email", name: "email", widget: "text" }
           - { label: "Telefonnummer", name: "tel", widget: "text" }
-          - { label: "Facebook Titel", name: "facebooklink", widget: "string" }
+          - { label: "Facebook Titel", name: "facebooktitle", widget: "string" }
           - { label: "Facebook Link", name: "facebooklink", widget: "string" }
       - label: "SEO"
         name: "seo"
