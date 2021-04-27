@@ -1,6 +1,5 @@
 import Link from "next/link"
-import styles from "./navigation.module.scss"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import UnderlineSvg from "./underline-svg"
 
@@ -29,29 +28,28 @@ const navItems = [
 
 export default function Navigation() {
 	const router = useRouter()
-	let isMobileNavOpen = false
+	let [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 	const toggleButton = useRef(null)
 	const mobileMenu = useRef(null)
+	const burgerLinesBaseStyles = "absolute w-full h-[1px] left-1/2 -translate-x-1/2 bg-gray-text transition-burgerline duration-300 transform"
 
 	const openMobileNav = () => {
-		mobileMenu.current.classList.remove("hidden")
-		toggleButton.current.classList.add("closed")
+		mobileMenu.current.classList.remove("opacity-0", "pointer-events-none", "translate-x-full")
 	}
 
 	const closeMobileNav = () => {
-		mobileMenu.current.classList.add("hidden")
-		toggleButton.current.classList.remove("closed")
+		mobileMenu.current.classList.add("opacity-0", "pointer-events-none", "translate-x-full")
 	}
 
 	const toggleMobileNav = () => {
 		isMobileNavOpen ? closeMobileNav() : openMobileNav()
-		isMobileNavOpen = !isMobileNavOpen
+		setIsMobileNavOpen(!isMobileNavOpen)
 	}
 
 	useEffect(() => {})
 
 	return (
-		<nav className="bg-yellow-300 w-full fixed z-20">
+		<nav className="bg-gray-bg lg:bg-transparent w-full fixed z-20">
 			<div className="container py-4 flex justify-between items-center">
 				{/* logo */}
 				<Link href="/">
@@ -72,12 +70,15 @@ export default function Navigation() {
 					})}
 				</div>
 				{/* mobile menu */}
-				<div ref={mobileMenu} className="hidden lg:hidden fixed top-0 left-0 w-full h-full bg-white z-10">
+				<div
+					ref={mobileMenu}
+					className="opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10"
+				>
 					<div className="container w-full h-full flex flex-col justify-center items-start sm:items-center">
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (
-								<span key={navItem.path} className="relative mb-6 last:mb-0 font-bold text-sm">
+								<span key={navItem.path} className="relative mb-6 last:mb-0 subheader">
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
@@ -95,8 +96,8 @@ export default function Navigation() {
 						toggleMobileNav()
 					}}
 				>
-					<div className="absolute w-full h-[1px] top-0 bg-gray-text"></div>
-					<div className="absolute w-full h-[1px] bottom-0 bg-gray-text"></div>
+					<div className={burgerLinesBaseStyles + " " + "top-0" + " " + (isMobileNavOpen ? `-rotate-45 top-1/2 w-4/5` : "")}></div>
+					<div className={burgerLinesBaseStyles + " " + "bottom-0" + " " + (isMobileNavOpen ? `rotate-45 bottom-1/2 w-4/5` : "")}></div>
 				</button>
 			</div>
 		</nav>

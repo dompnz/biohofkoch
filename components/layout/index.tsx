@@ -3,9 +3,9 @@ import Footer from "../footer"
 
 export default function Layout({ children, showNav = true, showFooter = true }) {
 	return (
-		<div>
+		<div className="flex flex-col min-h-screen">
 			{showNav && <Navigation />}
-			<main>{children}</main>
+			<main className="mb-auto">{children}</main>
 			{showFooter && <Footer />}
 		</div>
 	)

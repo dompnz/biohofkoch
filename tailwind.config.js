@@ -48,6 +48,8 @@ module.exports = {
 			},
 			transitionProperty: {
 				width: "width",
+				opacity: "opacity",
+				burgerline: "top, bottom, transform, width",
 			},
 			width: {
 				"1/5": "20%",
