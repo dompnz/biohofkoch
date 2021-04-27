@@ -57,16 +57,16 @@ export default function Navigation() {
 					<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 flex-shrink-0 z-20"></a>
 				</Link>
 				{/* desktop menu */}
-				<div className="hidden lg:block">
+				<div className="hidden lg:flex">
 					{navItems.map((navItem) => {
 						const isCurrentPath = router.route === "/" + navItem.path
 						return (
-							<Link href={`/${navItem.path}`} key={navItem.path}>
-								<a className="relative ml-6 font-extrabold">
-									<span>{navItem.name}</span>
-									<span className="absolute top-full left-1/2 transform -translate-x-1/2 w-full max-w-full">{isCurrentPath && <UnderlineSvg />}</span>
-								</a>
-							</Link>
+							<span className="relative ml-6 font-extrabold">
+								<Link href={`/${navItem.path}`} key={navItem.path}>
+									<a>{navItem.name}</a>
+								</Link>
+								<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
+							</span>
 						)
 					})}
 				</div>
@@ -76,12 +76,12 @@ export default function Navigation() {
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (
-								<Link href={`/${navItem.path}`} key={navItem.path}>
-									<a className="relative mb-6 last:mb-0 font-extrabold">
-										<span>{navItem.name}</span>
-										<span className="absolute top-full left-1/2 transform -translate-x-1/2 w-full max-w-full">{isCurrentPath && <UnderlineSvg />}</span>
-									</a>
-								</Link>
+								<span className="relative mb-6 last:mb-0 font-extrabold">
+									<Link href={`/${navItem.path}`} key={navItem.path}>
+										<a>{navItem.name}</a>
+									</Link>
+									<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
+								</span>
 							)
 						})}
 					</div>
@@ -93,8 +93,8 @@ export default function Navigation() {
 						toggleMobileNav()
 					}}
 				>
-					<div className="absolute w-full h-[1px] top-0 bg-gray-dark"></div>
-					<div className="absolute w-full h-[1px] bottom-0 bg-gray-dark"></div>
+					<div className="absolute w-full h-[1px] top-0 bg-gray-text"></div>
+					<div className="absolute w-full h-[1px] bottom-0 bg-gray-text"></div>
 				</button>
 			</div>
 		</nav>

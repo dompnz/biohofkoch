@@ -26,9 +26,10 @@ module.exports = {
 			},
 			colors: {
 				gray: {
-					light: "#F0F0F0",
-					dark: "#262626",
-					darker: "#161615",
+					bg: "#F4F4F4",
+					footer: "#E5E5E5",
+					text: "#262626",
+					stroke: "#161615",
 				},
 			},
 			backgroundImage: (theme) => ({

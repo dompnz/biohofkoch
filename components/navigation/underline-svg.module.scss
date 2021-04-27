@@ -3,13 +3,12 @@
 }
 
 .path {
-	fill: #262626;
 	fill: transparent;
-	stroke: #161615;
+	@apply stroke-current text-gray-stroke;
 	stroke-linecap: round;
 	stroke-miterlimit: 10;
 	stroke-width: 2px;
-	$path-total-length: 194; // get this by calling pathElement.getTotalLength() in the browser
+	$path-total-length: 106; // get this by calling pathElement.getTotalLength() in the browser
 	stroke-dasharray: $path-total-length;
 	stroke-dashoffset: $path-total-length;
 	animation: drawStroke 1s ease;
