@@ -52,7 +52,7 @@ export default function Navigation() {
 
 	return (
 		<nav className="bg-yellow-300 w-full fixed z-20">
-			<div className="container mx-auto py-4 flex justify-between items-center">
+			<div className="container py-4 flex justify-between items-center">
 				{/* logo */}
 				<Link href="/">
 					<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 flex-shrink-0 z-20"></a>
@@ -73,7 +73,7 @@ export default function Navigation() {
 				</div>
 				{/* mobile menu */}
 				<div ref={mobileMenu} className="hidden lg:hidden fixed top-0 left-0 w-full h-full bg-white z-10">
-					<div className="container max-w-none w-full h-full container flex flex-col justify-center items-start sm:items-center">
+					<div className="container w-full h-full flex flex-col justify-center items-start sm:items-center">
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (

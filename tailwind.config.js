@@ -37,6 +37,7 @@ module.exports = {
 				logo: "url('/assets/images/logo.svg')",
 			}),
 			container: {
+				center: true,
 				padding: {
 					DEFAULT: "1rem",
 					sm: "2rem",
