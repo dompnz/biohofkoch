@@ -25,7 +25,7 @@ collections:
           - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
           - { label: "Hintergrundbild", name: "backgroundimage", widget: "image", media_library: { config: { multiple: true } } }
           - { label: "Kontaktdaten", name: "body", widget: "markdown" }
-          - { label: "Facebook Link", name: "facebooklink_placeholder", widget: "string" }
+          - { label: "Facebook Link", name: "facebooklink", widget: "string" }
       - label: "Startseite"
         name: "startseite"
         file: "content/startseite.md"
@@ -66,7 +66,7 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Kontaktdaten", name: "contactdata", widget: "text" }
           - { label: "Standort", name: "location", widget: "map" }
-          - { label: "Kontakt Titel", name: "contactdata", widget: "string" }
+          - { label: "Kontakt Titel", name: "contacttitle", widget: "string" }
           - { label: "Email", name: "email", widget: "text" }
           - { label: "Telefonnummer", name: "tel", widget: "text" }
           - { label: "Facebook Titel", name: "facebooktitle", widget: "string" }
