@@ -41,9 +41,9 @@ collections:
         file: "content/suesse-knolle.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-      - label: "Hofladen & Bio Kiste"
-        name: "hofladen-bio-kiste"
-        file: "content/hofladen-bio-kiste.md"
+      - label: "Hofladen & Gemüsekiste"
+        name: "hofladen-gemuesekiste"
+        file: "content/hofladen-gemuesekiste.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
       - label: "Presseartikel"

@@ -37,12 +37,12 @@ export default function Homepage() {
 				{/* info container */}
 				<div className="container max-w-none flex-grow mt-8 pb-12 lg:mt-0 lg:p-12 xl:p-20 flex flex-col lg:w-1/3">
 					<div className="mt-auto mb-6 lg:mb-16 animated-underlines">
-						<h1 className="font-sans uppercase font-extrabold text-sm tracking-wide mb-4">Biohof Koch</h1>
+						<h1 className="">Biohof Koch</h1>
 						<MarkdownContent />
 					</div>
 					<a href={attributes.facebooklink} target="_blank" rel="noreferrer" className="flex items-center flex-wrap animated-underlines">
 						<img src="/assets/images/facebook.svg" alt="facebook icon" width="22px" height="22px" className="inline mr-5 object-contain object-center" />
-						<span className="uppercase font-extrabold text-sm tracking-wide animated-underlines-target">Biohof Koch</span>
+						<span className="">Biohof Koch</span>
 					</a>
 				</div>
 			</div>

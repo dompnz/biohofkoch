@@ -14,8 +14,8 @@ const navItems = [
 		path: "suesse-knolle",
 	},
 	{
-		name: "Hofladen & Bio Kiste",
-		path: "hofladen-bio-kiste",
+		name: "Hofladen & Gemüsekiste",
+		path: "hofladen-gemuesekiste",
 	},
 	{
 		name: "Presseartikel",
@@ -62,7 +62,7 @@ export default function Navigation() {
 					{navItems.map((navItem) => {
 						const isCurrentPath = router.route === "/" + navItem.path
 						return (
-							<span key={navItem.path} className="relative ml-6 font-extrabold">
+							<span key={navItem.path} className="relative ml-6 subheader">
 								<Link href={`/${navItem.path}`}>
 									<a>{navItem.name}</a>
 								</Link>
@@ -77,7 +77,7 @@ export default function Navigation() {
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (
-								<span key={navItem.path} className="relative mb-6 last:mb-0 font-extrabold">
+								<span key={navItem.path} className="relative mb-6 last:mb-0 font-bold text-sm">
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
