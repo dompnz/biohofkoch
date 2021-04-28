@@ -42,12 +42,12 @@ collections:
           - { label: "Einleitungsbild", name: "heroImage", widget: "image" }
           - { label: "Link-Box Text", name: "linkboxText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
           - label: "Profile"
+            label_singular: "Profil"
             name: "profiles"
             widget: "list"
             allow_add: true
             collapsed: false
             min: 1
-            label_singular: "Profil hinzufügen"
             fields:
               - { label: "Name", name: "profileName", widget: "string" }
               - { label: "Text", name: "profileText", widget: "string" }
