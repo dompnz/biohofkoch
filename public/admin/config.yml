@@ -36,6 +36,23 @@ collections:
         file: "content/ueber-uns.md"
         fields:
           - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
+          - { label: "Einleitungstitel", name: "heroHeader", widget: "string" }
+          - { label: "Einleitungstext", name: "heroText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
+          - { label: "Einleitungsbild", name: "heroImage", widget: "image" }
+          - { label: "Link-Box Text", name: "linkboxText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
+          - label: "Profile"
+            name: "profiles"
+            widget: "list"
+            allow_add: true
+            min: 1
+            fields:
+              - { label: "Name", name: "profileName", widget: "string" }
+              - { label: "Text", name: "profileText", widget: "string" }
+              - { label: "Zitat", name: "profileQuote", widget: "string" }
+              - { label: "Bild", name: "profileImage", widget: "image" }
+          - { label: "Gallerie Bild 1", name: "galleryImage1", widget: "image" }
+          - { label: "Gallerie Bild 2", name: "galleryImage2", widget: "image" }
       - label: "Süße Knolle"
         name: "suesse-knolle"
         file: "content/suesse-knolle.md"

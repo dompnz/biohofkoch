@@ -4,9 +4,7 @@ import { attributes, react as MarkdownContent } from "../content/platzhalter.md"
 import Layout from "../components/layout"
 
 export default function Placeholder() {
-	useEffect(() => {
-		console.log(MarkdownContent)
-	})
+	useEffect(() => {})
 
 	return (
 		<Layout showNav={false} showFooter={false}>

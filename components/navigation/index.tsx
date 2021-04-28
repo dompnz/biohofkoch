@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useRef, useEffect, useState } from "react"
 import { useRouter } from "next/router"
-import UnderlineSvg from "./underline-svg"
+import NavUnderlineSvg from "../animated_svgs/nav/underline"
 
 const navItems = [
 	{
@@ -53,7 +53,7 @@ export default function Navigation() {
 			<div className="container py-4 flex justify-between items-center">
 				{/* logo */}
 				<Link href="/">
-					<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 flex-shrink-0 z-20"></a>
+					<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20"></a>
 				</Link>
 				{/* desktop menu */}
 				<div className="hidden lg:flex">
@@ -64,7 +64,7 @@ export default function Navigation() {
 								<Link href={`/${navItem.path}`}>
 									<a>{navItem.name}</a>
 								</Link>
-								<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
+								<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
 							</span>
 						)
 					})}
@@ -82,7 +82,7 @@ export default function Navigation() {
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
-									<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <UnderlineSvg />}</span>
+									<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
 								</span>
 							)
 						})}

@@ -24,6 +24,9 @@ module.exports = {
 			fontSize: {
 				sm: ["0.875rem", "1.25rem"],
 				base: ["1rem", "1.875rem"],
+				profilequote: ["2.5rem", "2.8125rem"],
+				profileheader: ["6.25rem", "10.3125rem"],
+				hero: ["10rem", "8.75rem"],
 			},
 			colors: {
 				gray: {
@@ -58,6 +61,14 @@ module.exports = {
 				"1/8": "12.5%",
 				"1/9": "11.1111111%",
 				"1/10": "10%",
+			},
+			animation: {
+				"draw-stroke": "drawStroke 500ms ease forwards",
+			},
+			keyframes: {
+				drawStroke: {
+					"100%": { strokeDashoffset: 0 },
+				},
 			},
 		},
 		screens: {
