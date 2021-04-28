@@ -7,8 +7,8 @@ export default function AboutUsProfile({ imageSrc = "", name = "", bodyText = ""
 	const mb = "mb-4 lg:mb-14"
 
 	return (
-		<section className={"flex" + (desktopImageFirst ? " flex-row-reverse" : "")}>
-			<div className="flex flex-col lg:w-1/2 lg:mr-8">
+		<section className={`flex ${desktopImageFirst ? " flex-row-reverse" : ""}`}>
+			<div className={`flex flex-col lg:w-1/2 ${desktopImageFirst ? "lg:ml-8" : "lg:mr-8"}`}>
 				<div className={mb}>
 					<h1 className={`${styles.header} relative inline font-handwriting text-3xl xl:text-profileheader`}>{name}</h1>
 				</div>
@@ -18,7 +18,7 @@ export default function AboutUsProfile({ imageSrc = "", name = "", bodyText = ""
 				<p className={mb}>{bodyText}</p>
 				<p className="font-handwriting text-2xl xl:text-profilequote mt-auto">{quote}</p>
 			</div>
-			<div className="hidden lg:flex lg:items-center lg:w-1/2 lg:ml-8">
+			<div className={`hidden lg:flex lg:items-center lg:w-1/2 ${desktopImageFirst ? "lg:mr-8" : "lg:ml-8"}`}>
 				<div className={styles.imageContainer}>
 					<ProfileImage />
 				</div>
