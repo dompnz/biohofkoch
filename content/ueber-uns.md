@@ -24,6 +24,7 @@ profiles:
       arbeitet hauptberuflich in der Gesundheits- und Krankenpflege.
     profileQuote: „ Liebt kochen mit den gesunden selbsterzeugten Bio-Lebensmitteln. “
     profileImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+    profileSwitch: true
 galleryImage1: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 galleryImage2: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 ---
