@@ -2,6 +2,7 @@ import Link from "next/link"
 import { useRef, useEffect, useState } from "react"
 import { useRouter } from "next/router"
 import NavUnderlineSvg from "../animated_svgs/nav/underline"
+import NavSpacer from "./nav-spacer"
 
 const navItems = [
 	{
@@ -26,7 +27,7 @@ const navItems = [
 	},
 ]
 
-export default function Navigation() {
+export default function Navigation({ useNavSpacer = true }) {
 	const router = useRouter()
 	let [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 	const toggleButton = useRef(null)
@@ -49,36 +50,20 @@ export default function Navigation() {
 	useEffect(() => {})
 
 	return (
-		<nav className="bg-gray-bg lg:bg-transparent w-full fixed z-20">
-			<div className="container py-4 flex justify-between items-center">
-				{/* logo */}
-				<Link href="/">
-					<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20"></a>
-				</Link>
-				{/* desktop menu */}
-				<div className="hidden lg:flex">
-					{navItems.map((navItem) => {
-						const isCurrentPath = router.route === "/" + navItem.path
-						return (
-							<span key={navItem.path} className="relative ml-6 subheader">
-								<Link href={`/${navItem.path}`}>
-									<a>{navItem.name}</a>
-								</Link>
-								<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
-							</span>
-						)
-					})}
-				</div>
-				{/* mobile menu */}
-				<div
-					ref={mobileMenu}
-					className="opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10"
-				>
-					<div className="container w-full h-full flex flex-col justify-center items-start sm:items-center">
+		<div>
+			{useNavSpacer && <NavSpacer />}
+			<nav className="bg-gray-bg lg:bg-transparent w-full fixed top-0 left-0 z-20">
+				<div className="container py-4 flex justify-between items-center">
+					{/* logo */}
+					<Link href="/">
+						<a className="bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20"></a>
+					</Link>
+					{/* desktop menu */}
+					<div className="hidden lg:flex">
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === "/" + navItem.path
 							return (
-								<span key={navItem.path} className="relative mb-6 last:mb-0 subheader">
+								<span key={navItem.path} className="relative ml-6 subheader">
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
@@ -87,19 +72,38 @@ export default function Navigation() {
 							)
 						})}
 					</div>
+					{/* mobile menu */}
+					<div
+						ref={mobileMenu}
+						className="opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10"
+					>
+						<div className="container w-full h-full flex flex-col justify-center items-start sm:items-center">
+							{navItems.map((navItem) => {
+								const isCurrentPath = router.route === "/" + navItem.path
+								return (
+									<span key={navItem.path} className="relative mb-6 last:mb-0 subheader">
+										<Link href={`/${navItem.path}`}>
+											<a>{navItem.name}</a>
+										</Link>
+										<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
+									</span>
+								)
+							})}
+						</div>
+					</div>
+					{/* burger button menu */}
+					<button
+						ref={toggleButton}
+						className="lg:hidden relative h-4 w-8 z-20"
+						onClick={() => {
+							toggleMobileNav()
+						}}
+					>
+						<div className={burgerLinesBaseStyles + " " + "top-0" + " " + (isMobileNavOpen ? `-rotate-45 top-1/2 w-4/5` : "")}></div>
+						<div className={burgerLinesBaseStyles + " " + "bottom-0" + " " + (isMobileNavOpen ? `rotate-45 bottom-1/2 w-4/5` : "")}></div>
+					</button>
 				</div>
-				{/* burger button menu */}
-				<button
-					ref={toggleButton}
-					className="lg:hidden relative h-4 w-8 z-20"
-					onClick={() => {
-						toggleMobileNav()
-					}}
-				>
-					<div className={burgerLinesBaseStyles + " " + "top-0" + " " + (isMobileNavOpen ? `-rotate-45 top-1/2 w-4/5` : "")}></div>
-					<div className={burgerLinesBaseStyles + " " + "bottom-0" + " " + (isMobileNavOpen ? `rotate-45 bottom-1/2 w-4/5` : "")}></div>
-				</button>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	)
 }

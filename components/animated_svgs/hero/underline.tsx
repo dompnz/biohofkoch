@@ -6,12 +6,12 @@ export default function NavUnderlineSvg() {
 
 	useEffect(() => {
 		const calculatedPathLength = Math.ceil(svgPath.current?.getTotalLength())
-		console.log("svg path total length: " + calculatedPathLength)
+		//console.log("svg path total length: " + calculatedPathLength)
 		setPathTotalLength(calculatedPathLength)
 	}, [pathTotalLength]) // only re-run the effect if length changes
 
 	return (
-		<svg xmlns="http://www.w3.org/2000/svg" width="300" height="4.581" viewBox="0 0 300 4.581" className="w-full">
+		<svg xmlns="http://www.w3.org/2000/svg" width="300" height="4.581" viewBox="0 0 300 4.581" className="">
 			<path
 				ref={svgPath}
 				className={`stroke-current text-gray-stroke animate-draw-stroke`}

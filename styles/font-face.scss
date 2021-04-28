@@ -18,7 +18,7 @@ $font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
 @font-face {
 	font-family: $font-family-name-zooja;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 400;
 	font-display: $font-display-default;
 	src: local("Zooja Light Pro"), url("#{$font-path-zooja}/Zooja_Light_Pro.woff2") format("woff2"),
 		url("#{$font-path-zooja}/Zooja_Light_Pro.ttf") format("truetype");
@@ -28,7 +28,7 @@ $font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
 @font-face {
 	font-family: $font-family-name-zooja;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
 	font-display: $font-display-default;
 	src: local("Zooja Pro"), url("#{$font-path-zooja}/Zooja_Pro.woff2") format("woff2"), url("#{$font-path-zooja}/Zooja_Pro.ttf") format("truetype");
 }

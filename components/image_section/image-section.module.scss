@@ -1,0 +1,28 @@
+.imageContainer1,
+.imageContainer2 {
+	& > div {
+		@apply relative;
+		$ratio: 770/523;
+		padding-bottom: 100% / $ratio;
+
+		img {
+			@apply absolute w-full h-full object-cover object-center;
+		}
+	}
+}
+
+.imageContainer1 {
+	@apply mb-8 lg:mb-0;
+}
+
+@screen lg {
+	.imageContainer1 {
+		@apply mr-auto;
+		width: 100% / (1290/410);
+	}
+
+	.imageContainer2 {
+		@apply ml-auto;
+		width: 100% / (1290/770);
+	}
+}

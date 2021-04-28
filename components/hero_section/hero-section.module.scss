@@ -1,0 +1,23 @@
+.imageContainer {
+	--desktopOffset: 0;
+	width: calc(100% + var(--desktopOffset, 0));
+	transform: translateX(calc(var(--desktopOffset, 0) * (-1)));
+
+	@screen lg {
+		--desktopOffset: 2rem;
+	}
+
+	@screen 2xl {
+		--desktopOffset: 4rem;
+	}
+
+	& > div {
+		@apply relative w-full h-0;
+		$ratio: 852/734;
+		padding-bottom: 100% / $ratio;
+
+		img {
+			@apply absolute w-full h-full object-cover object-center;
+		}
+	}
+}

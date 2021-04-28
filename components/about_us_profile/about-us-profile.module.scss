@@ -1,0 +1,12 @@
+.header {
+	&::after {
+		content: "";
+		@apply absolute top-full left-0 h-[4px] w-full bg-gray-stroke rounded;
+	}
+}
+
+.imageContainer {
+	@apply relative w-full h-0;
+	$ratio: 549/373;
+	padding-bottom: 100% / $ratio;
+}

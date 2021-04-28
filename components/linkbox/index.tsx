@@ -1,3 +1,3 @@
-export default function Linkbox() {
-	return <div></div>
+export default function Linkbox({ text = "" }) {
+	return <div>{text}</div>
 }

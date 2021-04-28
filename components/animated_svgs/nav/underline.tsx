@@ -6,7 +6,7 @@ export default function NavUnderlineSvg() {
 
 	useEffect(() => {
 		const calculatedPathLength = Math.ceil(svgPath.current?.getTotalLength())
-		console.log("svg path total length: " + calculatedPathLength)
+		//console.log("svg path total length: " + calculatedPathLength)
 		setPathTotalLength(calculatedPathLength)
 	}, [pathTotalLength]) // only re-run the effect if length changes
 
