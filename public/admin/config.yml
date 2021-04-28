@@ -45,13 +45,15 @@ collections:
             name: "profiles"
             widget: "list"
             allow_add: true
+            collapsed: false
             min: 1
+            label_singular: "Profil hinzufügen"
             fields:
               - { label: "Name", name: "profileName", widget: "string" }
               - { label: "Text", name: "profileText", widget: "string" }
               - { label: "Zitat", name: "profileQuote", widget: "string" }
               - { label: "Bild", name: "profileImage", widget: "image" }
-              - { label: "Bild links", name: "profileSwitch", widget: "boolean", default: false }
+              - { label: "Bild links", name: "profileSwitch", widget: "boolean", default: false, required: false }
           - { label: "Gallerie Bild 1", name: "galleryImage1", widget: "image" }
           - { label: "Gallerie Bild 2", name: "galleryImage2", widget: "image" }
       - label: "Süße Knolle"
