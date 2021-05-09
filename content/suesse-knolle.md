@@ -10,31 +10,20 @@ heroText: 2020 legten wir mit der Pflanzung von Süßkartoffeln „Süße Knolle
   Süßkartoffeln ist ein Windengewächs und mit den herkömmlichen Kartoffeln nicht
   verwandt.
 heroImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
-textimagecombo:
-  - profileSwitch: false
-    text: >-
-      Die Süßkartoffeln gelten als das nährstoffreichste Gemüse und haben ein
-      langanhaltendes Sättigungs-gefühl. Außerdem haben die Knollen einen hohen
-      Anteil an Ballaststoffen, Zucker, Vitamin A, C, E und Kalium. In der Küche
-      können die Knollen als Suppe, Haupt-speise, Beilage und sogar als
-      Nachspeise verwendet werden z.B.: Süßkartoffelsuppe, Süßkartoffelspalten,
-      Ofen-Süßkartoffel, Süßkartoffelauflauf. 
-
-
-      Süßkartoffeln werden am besten dunkel, kühl und trocken bei 12 bis 15 °C gelagert.
-    image: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+galleryText: asd
+galleryImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 shippingHeader: Versand
 shippingText1: Versand der Süßkartoffeln in Österreich und Deutschland Ende
   Oktober werden die vorbestellten Süßkartoffeln direkt zu Dir nach Hause
   gesendet. Bestellung unter [biohofkoch@gmx.at](mailto:biohofkoch@gmx.at)
 priceHeader: "Preise:"
 priceitems:
-  - priceItemQuantity: 5 kg
-    priceItemText: 35 € inkl. Versand
-  - priceItemQuantity: 10 kg
-    priceItemText: 60 € inkl. Versand
-  - priceItemText: 115 € inkl. Versand
-    priceItemQuantity: 20 kg
+  - quantity: 5 kg
+    text: 35 € inkl. Versand
+  - quantity: 10 kg
+    text: 60 € inkl. Versand
+  - text: 115 € inkl. Versand
+    quantity: 20 kg
 shippingText2: |-
   Süßkartoffel Jungpflanzen sind im Hofladen Ende Mai erhältlich\
   2,50 € pro Stück

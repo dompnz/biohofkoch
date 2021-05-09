@@ -65,17 +65,8 @@ collections:
           - { label: "Einleitungstitel", name: "heroHeader", widget: "string" }
           - { label: "Einleitungstext", name: "heroText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
           - { label: "Einleitungsbild", name: "heroImage", widget: "image" }
-          - label: "Text & Bild Combos"
-            label_singular: "Text & Bild Combo"
-            name: "textimagecombo"
-            widget: "list"
-            allow_add: true
-            collapsed: false
-            min: 1
-            fields:
-              - { label: "Text", name: "text", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-              - { label: "Bild", name: "image", widget: "image" }
-              - { label: "Invertiert", name: "profileSwitch", widget: "boolean", default: false, required: false }
+          - { label: "Gallerie Text", name: "galleryText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
+          - { label: "Gallerie Bild", name: "galleryImage", widget: "image" }
           - { label: "Versandtitel", name: "shippingHeader", widget: "string" }
           - { label: "Versanttext 1", name: "shippingText1", widget: "markdown", modes: ["rich_text"], editor_components: [] }
           - { label: "Preise Titel", name: "priceHeader", widget: "string" }
@@ -87,8 +78,8 @@ collections:
             collapsed: false
             min: 1
             fields:
-              - { label: "Menge", name: "priceItemQuantity", widget: "string" }
-              - { label: "Preis", name: "priceItemText", widget: "string" }
+              - { label: "Menge", name: "quantity", widget: "string" }
+              - { label: "Preis", name: "text", widget: "string" }
           - { label: "Versanttext 2", name: "shippingText2", widget: "markdown", modes: ["rich_text"], editor_components: [] }
           - { label: "Gallerie Bild 1", name: "galleryImage1", widget: "image" }
           - { label: "Gallerie Bild 2", name: "galleryImage2", widget: "image" }
