@@ -8,8 +8,6 @@ import { attributes, react as MarkdownContent } from "../content/ueber-uns.md"
 import { useEffect } from "react"
 
 export default function Page() {
-	const mb = "mb-8 2xl:mb-32"
-
 	useEffect(() => {
 		console.log(attributes)
 	})
@@ -21,11 +19,11 @@ export default function Page() {
 				<meta name="description" content={attributes.description} />
 				<meta property="og:image" content={attributes.heroImage} />
 			</Head>
-			<div className={`${mb}`}>
+			<div className="mb">
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
-			<div className={`${mb} container lg:px-32`}>
+			<div className={`mb container lg:px-32`}>
 				{attributes.profiles?.map((profile, index, { length }) => {
 					return (
 						<div key={profile.profileName}>
@@ -47,11 +45,11 @@ export default function Page() {
 				})}
 			</div>
 
-			<section className={`${mb} container`}>
+			<section className={`mb container`}>
 				<Linkbox text={attributes.linkboxText} />
 			</section>
 
-			<div className={`${mb} container`}>
+			<div className={`mb container`}>
 				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
 			</div>
 		</Layout>
