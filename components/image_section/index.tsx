@@ -1,12 +1,7 @@
 import styles from "./image-section.module.scss"
-import { useEffect } from "react"
 import ReactMarkdown from "react-markdown"
 
 export default function ImageSection({ imageSrc1 = "", imageSrc2 = "", text1 = "" }) {
-	useEffect(() => {
-		console.log(text1)
-	})
-
 	return (
 		<section className="flex flex-col lg:flex-row lg:items-center">
 			{text1 && (
