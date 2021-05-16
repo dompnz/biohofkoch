@@ -14,3 +14,7 @@
 .subheader {
 	@apply font-sans font-bold text-sm uppercase tracking-wide;
 }
+
+.header {
+	@apply text-6xl lg:text-header font-handwriting;
+}

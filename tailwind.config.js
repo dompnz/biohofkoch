@@ -26,6 +26,7 @@ module.exports = {
 				base: ["1rem", "1.875rem"],
 				profilequote: ["2.5rem", "2.8125rem"],
 				profileheader: ["6.25rem", "10.3125rem"],
+				header: ["7.5rem"],
 				hero: ["10rem", "8.75rem"],
 			},
 			colors: {

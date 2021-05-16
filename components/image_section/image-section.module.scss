@@ -16,7 +16,8 @@
 }
 
 @screen lg {
-	.imageContainer1 {
+	.imageContainer1,
+	.textContainer1 {
 		@apply mr-auto;
 		width: 100% / (1290/410);
 	}

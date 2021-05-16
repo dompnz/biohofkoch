@@ -17,15 +17,14 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 			<div className="container mb">
-				{attributes.galleryText}
-				{attributes.galleryImage}
+				<ImageSection text1={attributes.galleryText} imageSrc2={attributes.galleryImage} />
 			</div>
 			<div className="container mb flex flex-col lg:flex-row">
 				<div className="flex items-center justify-center lg:w-1/2">
-					<img src="/assets/images/logo-suesse-knolle-with-border.svg" alt="Logo Süße Knolle" className="w-1/2 mb-8 lg:mb-0" />
+					<img src="/assets/images/logo-suesse-knolle-with-border.svg" alt="Logo Süße Knolle" className="w-1/2 mb-10 lg:mb-0" />
 				</div>
 				<div className="lg:w-1/2">
-					<h2 className="mb-8">{attributes.shippingHeader}</h2>
+					<h2 className="mb-6 header">{attributes.shippingHeader}</h2>
 					<ReactMarkdown children={attributes.shippingText1} className="mb-8" />
 					<div className="mb-8">
 						<table>

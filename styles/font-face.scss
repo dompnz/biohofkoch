@@ -1,7 +1,7 @@
 @use "./abstracts" as *;
 
 $font-family-name-zooja: "Zooja"; // can be anything since we self host this
-$font-display-default: swap;
+$font-display-default: auto;
 
 // url encoded value for the characters you use so we only download those. https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests
 // add missing characters with this: https://www.urlencoder.org/
@@ -20,8 +20,7 @@ $font-path-m-plus: "/assets/fonts/m_plus_rounded_1c";
 	font-style: normal;
 	font-weight: 400;
 	font-display: $font-display-default;
-	src: local("Zooja Light Pro"), url("#{$font-path-zooja}/Zooja_Light_Pro.woff2") format("woff2"),
-		url("#{$font-path-zooja}/Zooja_Light_Pro.ttf") format("truetype");
+	src: local("Zooja Light Pro"), url("#{$font-path-zooja}/Zooja_Light_Pro.woff2") format("woff2"), url("#{$font-path-zooja}/Zooja_Light_Pro.ttf") format("truetype");
 }
 
 // Zooja Pro from https://www.onlinewebfonts.com/download/d9eab5143efc98cbd074fe4083108c58

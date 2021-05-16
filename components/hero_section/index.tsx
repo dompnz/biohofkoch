@@ -12,7 +12,7 @@ export default function HeroSection({ imageSrc = "", headerText = "", bodyText =
 				</div>
 			</div>
 			<div className="lg:w-1/2 lg:pl-32">
-				<h1 className="font-handwriting text-6xl 2xl:text-hero transform lg:-translate-x-8 2xl:-translate-x-40">{headerText}</h1>
+				<h1 className="font-handwriting text-6xl xl:text-8xl 2xl:text-hero transform lg:-translate-x-8 2xl:-translate-x-40">{headerText}</h1>
 				<HeroUnderlineSvg />
 				<p className="mt-8">{bodyText}</p>
 			</div>
