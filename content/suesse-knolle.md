@@ -19,8 +19,6 @@ galleryText: >-
   Ofen-Süßkartoffel, **Süßkartoffelauflauf.**
 
 
-
-
   Süßkartoffeln werden am besten dunkel, kühl und trocken bei 12 bis 15 °C gelagert.
 galleryImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 shippingHeader: Versand
