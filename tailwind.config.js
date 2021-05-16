@@ -33,7 +33,7 @@ module.exports = {
 				gray: {
 					bg: "#F4F4F4",
 					footer: "#E5E5E5",
-					text: "#262626",
+					text: "#000",//"#262626",
 					stroke: "#161615",
 				},
 			},

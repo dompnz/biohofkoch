@@ -73,10 +73,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						})}
 					</div>
 					{/* mobile menu */}
-					<div
-						ref={mobileMenu}
-						className="opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10"
-					>
+					<div ref={mobileMenu} className="opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10">
 						<div className="container w-full h-full flex flex-col justify-center items-start sm:items-center">
 							{navItems.map((navItem) => {
 								const isCurrentPath = router.route === "/" + navItem.path
@@ -85,7 +82,7 @@ export default function Navigation({ useNavSpacer = true }) {
 										<Link href={`/${navItem.path}`}>
 											<a>{navItem.name}</a>
 										</Link>
-										<span className="absolute bottom-0 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
+										<span className="absolute -bottom-2 left-0 w-full">{isCurrentPath && <NavUnderlineSvg />}</span>
 									</span>
 								)
 							})}
