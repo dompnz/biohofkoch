@@ -32,7 +32,7 @@ export default function Navigation({ useNavSpacer = true }) {
 	let [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 	const toggleButton = useRef(null)
 	const mobileMenu = useRef(null)
-	const burgerLinesBaseStyles = "absolute w-full h-[1px] left-1/2 -translate-x-1/2 bg-gray-text transition-burgerline duration-300 transform"
+	const burgerLinesBaseStyles = "absolute w-full h-[1px] left-1/2 -translate-x-1/2 bg-gray-dark transition-burgerline duration-300 transform"
 
 	const openMobileNav = () => {
 		mobileMenu.current.classList.remove("opacity-0", "pointer-events-none", "translate-x-full")

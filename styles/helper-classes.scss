@@ -7,7 +7,7 @@
 
 	&::after {
 		content: "";
-		@apply absolute bottom-[2px] left-0 w-full h-[1px] bg-gray-text;
+		@apply absolute bottom-[2px] left-0 w-full h-[1px] bg-gray-dark;
 		@apply transition-width duration-500 ease-in-out motion-reduce:transition-none;
 	}
 

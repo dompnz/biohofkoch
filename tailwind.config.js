@@ -24,16 +24,17 @@ module.exports = {
 			fontSize: {
 				sm: ["0.875rem", "1.25rem"],
 				base: ["1rem", "1.875rem"],
-				profilequote: ["2.5rem", "2.8125rem"],
-				profileheader: ["6.25rem", "10.3125rem"],
+				//profilequote: ["2.5rem", "2.8125rem"],
+				//profileheader: ["6.25rem", "10.3125rem"],
+				smallheader: ["2.5rem", "3.3125rem"],
 				header: ["7.5rem"],
 				hero: ["10rem", "8.75rem"],
 			},
 			colors: {
 				gray: {
-					bg: "#F4F4F4",
+					bg: "#F2F2F2",
 					footer: "#E5E5E5",
-					text: "#000",//"#262626",
+					dark: "#262626",
 					stroke: "#161615",
 				},
 			},
@@ -63,12 +64,17 @@ module.exports = {
 				"1/9": "11.1111111%",
 				"1/10": "10%",
 			},
+			borderWidth: {
+				'3': '3px'
+			},
 			animation: {
 				"draw-stroke": "drawStroke 500ms ease forwards",
 			},
 			keyframes: {
 				drawStroke: {
-					"100%": { strokeDashoffset: 0 },
+					"100%": {
+						strokeDashoffset: 0
+					},
 				},
 			},
 		},
