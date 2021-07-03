@@ -1,0 +1,9 @@
+.nav {
+	&:global(.scrolled-down) {
+		.logo {
+			@screen lg {
+				@apply h-12 w-12;
+			}
+		}
+	}
+}

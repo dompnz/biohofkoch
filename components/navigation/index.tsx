@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import NavUnderlineSvg from '../animated_svgs/nav/underline'
 import NavSpacer from './nav-spacer'
+import styles from './navigation.module.scss'
 
 const navItems = [
 	{
@@ -32,6 +33,7 @@ export default function Navigation({ useNavSpacer = true }) {
 	let [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 	const toggleButton = useRef(null)
 	const mobileMenu = useRef(null)
+	const nav = useRef(null)
 	const burgerLinesBaseStyles = 'absolute w-full h-[1px] left-1/2 -translate-x-1/2 bg-gray-dark transition-burgerline duration-300 transform'
 
 	const openMobileNav = () => {
@@ -47,20 +49,24 @@ export default function Navigation({ useNavSpacer = true }) {
 		setIsMobileNavOpen(!isMobileNavOpen)
 	}
 
-	const onScroll = (e) => {
-		console.log(e)
-	}
-
-	useEffect(() => {})
+	useEffect(() => {
+		window.onscroll = () => {
+			const top = window.pageYOffset || document.documentElement.scrollTop
+			const scrolledClass = 'scrolled-down'
+			top > 0 ? nav.current.classList.add(scrolledClass) : nav.current.classList.remove(scrolledClass)
+		}
+	}, [])
 
 	return (
 		<div>
 			{useNavSpacer && <NavSpacer />}
-			<nav className='bg-gray-bg w-full fixed top-0 left-0 z-20'>
+			<nav className={`${styles.nav} bg-gray-bg w-full fixed top-0 left-0 z-20`} ref={nav}>
 				<div className='container py-4 flex justify-between items-center'>
 					{/* logo */}
 					<Link href='/'>
-						<a className='bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20'></a>
+						<a
+							className={`${styles.logo} transition-square duration-300 bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20`}
+						></a>
 					</Link>
 					{/* desktop menu */}
 					<div className='hidden lg:flex'>
