@@ -19,7 +19,7 @@ export default function Page() {
 			<div className='container mb'>
 				<ImageSection text1={attributes.galleryText} imageSrc2={attributes.galleryImage} />
 			</div>
-			<div className='container mb flex flex-col lg:flex-row'>
+			<div className='container mb-default flex flex-col lg:flex-row'>
 				<div className='flex items-center justify-center lg:w-1/2'>
 					<img src='/assets/images/logo-suesse-knolle-with-border.svg' alt='Logo Süße Knolle' className='w-1/2 mb-10 lg:mb-0' />
 				</div>

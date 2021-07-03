@@ -23,7 +23,7 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
-			<div className='mb container lg:px-32'>
+			<div className='mb-default container lg:px-32'>
 				{attributes.profiles?.map((profile, index, { length }) => {
 					return (
 						<div key={profile.profileName}>
@@ -45,11 +45,11 @@ export default function Page() {
 				})}
 			</div>
 
-			<section className='mb container'>
+			<section className='mb-default container'>
 				<Linkbox text={attributes.linkboxText} />
 			</section>
 
-			<div className='mb container'>
+			<div className='mb-default container'>
 				<ImageSection imageSrc1={attributes.image1} imageSrc2={attributes.image2} />
 			</div>
 		</Layout>
