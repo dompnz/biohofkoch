@@ -92,10 +92,10 @@ collections:
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
-          - { label: 'Titel1', name: 'heroHeader', widget: 'string' }
-          - { label: 'Text1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
-          - { label: 'Bild1', name: 'image1', widget: 'image' }
-          - { label: 'Bild2', name: 'image2', widget: 'image' }
+          - { label: 'Titel 1', name: 'heroHeader', widget: 'string' }
+          - { label: 'Text 1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild 1', name: 'image1', widget: 'image' }
+          - { label: 'Bild 2', name: 'image2', widget: 'image' }
       - label: 'Hofladen'
         name: 'hofladen'
         file: 'content/hofladen.md'
@@ -105,8 +105,8 @@ collections:
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
-          - { label: 'Text1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
-          - { label: 'Bild1', name: 'image1', widget: 'image' }
+          - { label: 'Text 1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild 1', name: 'image1', widget: 'image' }
       - label: 'Presseartikel'
         name: 'presseartikel'
         file: 'content/presseartikel.md'
@@ -138,6 +138,17 @@ collections:
   - label: 'Allgemein'
     name: 'general'
     files:
+      - label: 'Allgemein'
+        name: 'general'
+        file: 'content/general.md'
+        fields:
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Bild (Teilen)', name: 'ogImage', widget: 'image' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Telefonnummer', name: 'tel', widget: 'string' }
+          - { label: 'Facebook Titel', name: 'facebooktitle', widget: 'string' }
+          - { label: 'Facebook Link', name: 'facebooklink', widget: 'string' }
       - label: 'Footer'
         name: 'footer'
         file: 'content/footer.md'
@@ -145,12 +156,6 @@ collections:
           - { label: 'Kontakt Titel 1', name: 'contacttitle1', widget: 'string' }
           - { label: 'Kontaktdaten', name: 'contacttext', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Kontakt Titel 2', name: 'contacttitle2', widget: 'string' }
-          - { label: 'Email', name: 'email', widget: 'string' }
-          - { label: 'Telefonnummer', name: 'tel', widget: 'string' }
-          - { label: 'Facebook Titel', name: 'facebooktitle', widget: 'string' }
-          - { label: 'Facebook Link', name: 'facebooklink', widget: 'string' }
-      - label: 'SEO'
-        name: 'seo'
-        file: 'content/seo.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Zertifikat Bild 1', name: 'certificateImage1', widget: 'image' }
+          - { label: 'Zertifikat Bild 2', name: 'certificateImage2', widget: 'image' }
+          - { label: 'Zertifikat Text', name: 'certificatetext', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
