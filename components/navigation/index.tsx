@@ -51,6 +51,7 @@ export default function Navigation({ useNavSpacer = true }) {
 
 	useEffect(() => {
 		window.onscroll = () => {
+			if (!nav.current) return
 			const top = window.pageYOffset || document.documentElement.scrollTop
 			const scrolledClass = 'scrolled-down'
 			top > 0 ? nav.current.classList.add(scrolledClass) : nav.current.classList.remove(scrolledClass)

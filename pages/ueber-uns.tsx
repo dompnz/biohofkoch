@@ -50,7 +50,7 @@ export default function Page() {
 			</section>
 
 			<div className='mb container'>
-				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
+				<ImageSection imageSrc1={attributes.image1} imageSrc2={attributes.image2} />
 			</div>
 		</Layout>
 	)

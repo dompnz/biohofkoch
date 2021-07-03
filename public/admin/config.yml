@@ -40,7 +40,6 @@ collections:
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
-          - { label: 'Link-Box Text', name: 'linkboxText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - label: 'Profile'
             label_singular: 'Profil'
             name: 'profiles'
@@ -54,8 +53,13 @@ collections:
               - { label: 'Zitat', name: 'profileQuote', widget: 'string' }
               - { label: 'Bild', name: 'profileImage', widget: 'image' }
               - { label: 'Invertiert', name: 'profileSwitch', widget: 'boolean', default: false, required: false }
-          - { label: 'Gallerie Bild 1', name: 'galleryImage1', widget: 'image' }
-          - { label: 'Gallerie Bild 2', name: 'galleryImage2', widget: 'image' }
+          - { label: 'Titel 1', name: 'title1', widget: 'string' }
+          - { label: 'Text 1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild 1', name: 'image1', widget: 'image' }
+          - { label: 'Bild 2', name: 'image2', widget: 'image' }
+          - { label: 'Titel 2', name: 'title2', widget: 'string' }
+          - { label: 'Text 2', name: 'text2', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild 3', name: 'image3', widget: 'image' }
       - label: 'Süße Knolle'
         name: 'suesse-knolle'
         file: 'content/suesse-knolle.md'
@@ -92,7 +96,7 @@ collections:
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
-          - { label: 'Titel 1', name: 'heroHeader', widget: 'string' }
+          - { label: 'Titel 1', name: 'title1', widget: 'string' }
           - { label: 'Text 1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Bild 1', name: 'image1', widget: 'image' }
           - { label: 'Bild 2', name: 'image2', widget: 'image' }
