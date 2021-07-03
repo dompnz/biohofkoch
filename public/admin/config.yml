@@ -3,117 +3,154 @@ backend:
   branch: main
 media_folder: public/uploads
 public_folder: uploads
-locale: "de"
+locale: 'de'
 slug:
-  encoding: "ascii"
+  encoding: 'ascii'
   clean_accents: true
 site_url: https://www.biohofkoch.com/
 logo_url: /assets/images/logo.svg
-extension: "md"
+extension: 'md'
 editor:
   preview: false
 collections:
-  - label: "Seiten"
-    name: "pages"
+  - label: 'Seiten'
+    name: 'pages'
     files:
-      - label: "Platzhalter"
-        name: "platzhalter"
-        file: "content/platzhalter.md"
-        preview_path: "/"
+      - label: 'Platzhalter'
+        name: 'platzhalter'
+        file: 'content/platzhalter.md'
+        preview_path: '/'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
-          - { label: "Hintergrundbild", name: "backgroundimage", widget: "image", media_library: { config: { multiple: true } } }
-          - { label: "Kontaktdaten", name: "body", widget: "markdown" }
-          - { label: "Facebook Link", name: "facebooklink", widget: "string" }
-      - label: "Startseite"
-        name: "startseite"
-        file: "content/startseite.md"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Hintergrundbild', name: 'backgroundimage', widget: 'image', media_library: { config: { multiple: true } } }
+          - { label: 'Kontaktdaten', name: 'body', widget: 'markdown' }
+          - { label: 'Facebook Link', name: 'facebooklink', widget: 'string' }
+      - label: 'Startseite'
+        name: 'startseite'
+        file: 'content/startseite.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-      - label: "Über uns"
-        name: "ueber-uns"
-        file: "content/ueber-uns.md"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+      - label: 'Über uns'
+        name: 'ueber-uns'
+        file: 'content/ueber-uns.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
-          - { label: "Einleitungstitel", name: "heroHeader", widget: "string" }
-          - { label: "Einleitungstext", name: "heroText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Einleitungsbild", name: "heroImage", widget: "image" }
-          - { label: "Link-Box Text", name: "linkboxText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - label: "Profile"
-            label_singular: "Profil"
-            name: "profiles"
-            widget: "list"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Link-Box Text', name: 'linkboxText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - label: 'Profile'
+            label_singular: 'Profil'
+            name: 'profiles'
+            widget: 'list'
             allow_add: true
             collapsed: false
             min: 1
             fields:
-              - { label: "Name", name: "profileName", widget: "string" }
-              - { label: "Text", name: "profileText", widget: "string" }
-              - { label: "Zitat", name: "profileQuote", widget: "string" }
-              - { label: "Bild", name: "profileImage", widget: "image" }
-              - { label: "Invertiert", name: "profileSwitch", widget: "boolean", default: false, required: false }
-          - { label: "Gallerie Bild 1", name: "galleryImage1", widget: "image" }
-          - { label: "Gallerie Bild 2", name: "galleryImage2", widget: "image" }
-      - label: "Süße Knolle"
-        name: "suesse-knolle"
-        file: "content/suesse-knolle.md"
+              - { label: 'Name', name: 'profileName', widget: 'string' }
+              - { label: 'Text', name: 'profileText', widget: 'string' }
+              - { label: 'Zitat', name: 'profileQuote', widget: 'string' }
+              - { label: 'Bild', name: 'profileImage', widget: 'image' }
+              - { label: 'Invertiert', name: 'profileSwitch', widget: 'boolean', default: false, required: false }
+          - { label: 'Gallerie Bild 1', name: 'galleryImage1', widget: 'image' }
+          - { label: 'Gallerie Bild 2', name: 'galleryImage2', widget: 'image' }
+      - label: 'Süße Knolle'
+        name: 'suesse-knolle'
+        file: 'content/suesse-knolle.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "text", pattern: [".{0,160}", "Maximal 160 Zeichen"] }
-          - { label: "Einleitungstitel", name: "heroHeader", widget: "string" }
-          - { label: "Einleitungstext", name: "heroText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Einleitungsbild", name: "heroImage", widget: "image" }
-          - { label: "Gallerie Text", name: "galleryText", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Gallerie Bild", name: "galleryImage", widget: "image" }
-          - { label: "Versandtitel", name: "shippingHeader", widget: "string" }
-          - { label: "Versanttext 1", name: "shippingText1", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Preise Titel", name: "priceHeader", widget: "string" }
-          - label: "Preis - Zeilen"
-            label_singular: "Preise - Zeile"
-            name: "priceitems"
-            widget: "list"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Gallerie Text', name: 'galleryText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Gallerie Bild', name: 'galleryImage', widget: 'image' }
+          - { label: 'Versandtitel', name: 'shippingHeader', widget: 'string' }
+          - { label: 'Versanttext 1', name: 'shippingText1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Preise Titel', name: 'priceHeader', widget: 'string' }
+          - label: 'Preis - Zeilen'
+            label_singular: 'Preise - Zeile'
+            name: 'priceitems'
+            widget: 'list'
             allow_add: true
             collapsed: false
             min: 1
             fields:
-              - { label: "Menge", name: "quantity", widget: "string" }
-              - { label: "Preis", name: "text", widget: "string" }
-          - { label: "Versanttext 2", name: "shippingText2", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Gallerie Bild 1", name: "galleryImage1", widget: "image" }
-          - { label: "Gallerie Bild 2", name: "galleryImage2", widget: "image" }
-      - label: "Hofladen & Gemüsekiste"
-        name: "hofladen-gemuesekiste"
-        file: "content/hofladen-gemuesekiste.md"
+              - { label: 'Menge', name: 'quantity', widget: 'string' }
+              - { label: 'Preis', name: 'text', widget: 'string' }
+          - { label: 'Versanttext 2', name: 'shippingText2', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Gallerie Bild 1', name: 'galleryImage1', widget: 'image' }
+          - { label: 'Gallerie Bild 2', name: 'galleryImage2', widget: 'image' }
+      - label: 'Bio-Frühkartoffeln'
+        name: 'bio-fruehkartoffeln'
+        file: 'content/bio-fruehkartoffeln.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-      - label: "Presseartikel"
-        name: "presseartikel"
-        file: "content/presseartikel.md"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Titel1', name: 'heroHeader', widget: 'string' }
+          - { label: 'Text1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild1', name: 'image1', widget: 'image' }
+          - { label: 'Bild2', name: 'image2', widget: 'image' }
+      - label: 'Hofladen'
+        name: 'hofladen'
+        file: 'content/hofladen.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-      - label: "Kontakt"
-        name: "kontakt"
-        file: "content/kontakt.md"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Text1', name: 'text1', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Bild1', name: 'image1', widget: 'image' }
+      - label: 'Presseartikel'
+        name: 'presseartikel'
+        file: 'content/presseartikel.md'
         fields:
-          - { label: "Titel", name: "title", widget: "string" }
-  - label: "Allgemein"
-    name: "general"
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - label: 'Dateien'
+            label_singular: 'Datei'
+            name: 'files'
+            widget: 'list'
+            allow_add: true
+            collapsed: false
+            min: 1
+            fields:
+              - { label: 'Dateiname', name: 'quantity', widget: 'string' }
+              - { label: 'Datei', name: 'file', widget: 'file' }
+      - label: 'Kontakt'
+        name: 'kontakt'
+        file: 'content/kontakt.md'
+        fields:
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+  - label: 'Allgemein'
+    name: 'general'
     files:
-      - label: "Footer"
-        name: "footer"
-        file: "content/footer.md"
+      - label: 'Footer'
+        name: 'footer'
+        file: 'content/footer.md'
         fields:
-          - { label: "Kontakt Titel 1", name: "contacttitle1", widget: "string" }
-          - { label: "Kontaktdaten", name: "contacttext", widget: "markdown", modes: ["rich_text"], editor_components: [] }
-          - { label: "Kontakt Titel 2", name: "contacttitle2", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
-          - { label: "Telefonnummer", name: "tel", widget: "string" }
-          - { label: "Facebook Titel", name: "facebooktitle", widget: "string" }
-          - { label: "Facebook Link", name: "facebooklink", widget: "string" }
-      - label: "SEO"
-        name: "seo"
-        file: "content/seo.md"
+          - { label: 'Kontakt Titel 1', name: 'contacttitle1', widget: 'string' }
+          - { label: 'Kontaktdaten', name: 'contacttext', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Kontakt Titel 2', name: 'contacttitle2', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Telefonnummer', name: 'tel', widget: 'string' }
+          - { label: 'Facebook Titel', name: 'facebooktitle', widget: 'string' }
+          - { label: 'Facebook Link', name: 'facebooklink', widget: 'string' }
+      - label: 'SEO'
+        name: 'seo'
+        file: 'content/seo.md'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: 'Title', name: 'title', widget: 'string' }
