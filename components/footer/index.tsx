@@ -1,7 +1,7 @@
-import { attributesFooter } from '../../content/footer.md'
-import { attributesGeneral } from '../../content/general.md'
 import ReactMarkdown from 'react-markdown'
 import styles from './footer.module.scss'
+import { attributes as attributesFooter } from '../../content/footer.md'
+import { attributes as attributesGeneral } from '../../content/general.md'
 
 export default function Footer() {
 	return (

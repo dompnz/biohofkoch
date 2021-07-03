@@ -1,11 +1,11 @@
-import Head from "next/head"
-import Layout from "../components/layout"
-import HeroSection from "../components/hero_section"
-import AboutUsProfile from "../components/about_us_profile"
-import Linkbox from "../components/linkbox"
-import ImageSection from "../components/image_section"
-import { attributes, react as MarkdownContent } from "../content/ueber-uns.md"
-import { useEffect } from "react"
+import Head from 'next/head'
+import Layout from '../components/layout'
+import HeroSection from '../components/hero_section'
+import AboutUsProfile from '../components/about_us_profile'
+import Linkbox from '../components/linkbox'
+import ImageSection from '../components/image_section'
+import { attributes, react as MarkdownContent } from '../content/ueber-uns.md'
+import { useEffect } from 'react'
 
 export default function Page() {
 	useEffect(() => {
@@ -15,15 +15,15 @@ export default function Page() {
 	return (
 		<Layout>
 			<Head>
-				<title>{attributes.title}</title>
-				<meta name="description" content={attributes.description} />
-				<meta property="og:image" content={attributes.heroImage} />
+				{attributes.title && <title>{attributes.title}</title>}
+				{attributes.description && <meta name='description' content={attributes.description} />}
+				{attributes.heroImage && <meta property='og:image' content={attributes.heroImage} />}
 			</Head>
-			<div className="mb">
+			<div className='mb'>
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
-			<div className="mb container lg:px-32">
+			<div className='mb container lg:px-32'>
 				{attributes.profiles?.map((profile, index, { length }) => {
 					return (
 						<div key={profile.profileName}>
@@ -36,8 +36,8 @@ export default function Page() {
 							/>
 							{index + 1 !== length && (
 								<div>
-									<div className="lg:hidden mb-8"></div>
-									<div className="hidden lg:block w-[385px] h-[4px] bg-gray-stroke rounded mx-auto my-16"></div>
+									<div className='lg:hidden mb-8'></div>
+									<div className='hidden lg:block w-[385px] h-[4px] bg-gray-stroke rounded mx-auto my-16'></div>
 								</div>
 							)}
 						</div>
@@ -45,11 +45,11 @@ export default function Page() {
 				})}
 			</div>
 
-			<section className="mb container">
+			<section className='mb container'>
 				<Linkbox text={attributes.linkboxText} />
 			</section>
 
-			<div className="mb container">
+			<div className='mb container'>
 				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
 			</div>
 		</Layout>
