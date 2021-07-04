@@ -17,7 +17,7 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 			<div className='container mb-default'>
-				<ImageSection text1={attributes.galleryText} imageSrc2={attributes.galleryImage} />
+				<ImageSection textSmall={attributes.galleryText} imageSrcBig={attributes.galleryImage} />
 			</div>
 			<div className='container mb-default flex flex-col lg:flex-row'>
 				<div className='flex items-center justify-center lg:w-1/2'>
@@ -49,7 +49,7 @@ export default function Page() {
 				</div>
 			</div>
 			<div className='container mb-default'>
-				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
+				<ImageSection imageSrcSmall={attributes.galleryImage1} imageSrcBig={attributes.galleryImage2} />
 			</div>
 		</Layout>
 	)

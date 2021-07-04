@@ -26,20 +26,18 @@ export default function Page() {
 			<div className='mb-default container lg:px-32'>
 				{attributes.profiles?.map((profile, index, { length }) => {
 					return (
-						<div key={profile.profileName}>
-							<AboutUsProfile
-								imageSrc={profile.profileImage}
-								name={profile.profileName}
-								bodyText={profile.profileText}
-								quote={profile.profileQuote}
-								desktopImageFirst={profile.profileSwitch}
+						<div key={profile.profileName} className={`${index + 1 !== length ? 'mb-default' : ''}`}>
+							<ImageSection
+								textSmall={
+									<>
+										<h2 className='header mb-8'>{profile.profileName}</h2>
+										<p>{profile.profileText}</p>
+										<p>{profile.profileQuote}</p>
+									</>
+								}
+								imageSrcBig={profile.profileImage}
+								switchedOnDesktop={index % 2 !== 0}
 							/>
-							{index + 1 !== length && (
-								<div>
-									<div className='lg:hidden mb-8'></div>
-									<div className='hidden lg:block w-[385px] h-[4px] bg-gray-stroke rounded mx-auto my-16'></div>
-								</div>
-							)}
 						</div>
 					)
 				})}
@@ -50,7 +48,7 @@ export default function Page() {
 			</section>
 
 			<div className='mb-default container'>
-				<ImageSection imageSrc1={attributes.image1} imageSrc2={attributes.image2} />
+				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</div>
 		</Layout>
 	)

@@ -1,5 +1,5 @@
-.imageContainer1,
-.imageContainer2 {
+.imageContainerSmall,
+.imageContainerBig {
 	& > div {
 		@apply relative;
 		$ratio: 770/523;
@@ -11,19 +11,17 @@
 	}
 }
 
-.imageContainer1 {
+.imageContainerSmall {
 	@apply mb-8 lg:mb-0;
 }
 
 @screen lg {
-	.imageContainer1,
-	.textContainer1 {
-		@apply mr-auto;
+	.imageContainerSmall,
+	.textContainerSmall {
 		width: 100% / (1290/410);
 	}
 
-	.imageContainer2 {
-		@apply ml-auto;
+	.imageContainerBig {
 		width: 100% / (1290/770);
 	}
 }

@@ -1,26 +1,36 @@
-import styles from "./image-section.module.scss"
-import ReactMarkdown from "react-markdown"
+import styles from './image-section.module.scss'
+import ReactMarkdown from 'react-markdown'
 
-export default function ImageSection({ imageSrc1 = "", imageSrc2 = "", text1 = "" }) {
+export default function ImageSection({ imageSrcSmall = '', imageSrcBig = '', textSmall = null, textBig = null, switchedOnDesktop = false }) {
+	console.log(typeof textSmall)
 	return (
-		<section className="flex flex-col lg:flex-row lg:items-center">
-			{text1 && (
-				<div className={styles.textContainer1}>
-					<ReactMarkdown children={text1} />
+		<section className={`flex flex-col lg:flex-row lg:items-center lg:justify-between ${switchedOnDesktop ? 'lg:flex-row-reverse' : ''}`}>
+			{textSmall && (
+				<div className={styles.textContainerSmall}>
+					{typeof textSmall === 'string' && <ReactMarkdown children={textSmall} />}
+					{typeof textSmall === 'object' && textSmall}
 				</div>
 			)}
-			{!text1 && (
-				<div className={styles.imageContainer1}>
+			{imageSrcSmall && (
+				<div className={styles.imageContainerSmall}>
 					<div>
-						<img src={imageSrc1} alt="biohof koch stimmungsbild" />
+						<img src={imageSrcSmall} alt='biohof koch stimmungsbild' />
 					</div>
 				</div>
 			)}
-			<div className={styles.imageContainer2}>
-				<div>
-					<img src={imageSrc2} alt="biohof koch stimmungsbild" />
+			{imageSrcBig && (
+				<div className={styles.imageContainerBig}>
+					<div>
+						<img src={imageSrcBig} alt='biohof koch stimmungsbild' />
+					</div>
 				</div>
-			</div>
+			)}
+			{textBig && (
+				<div className={styles.textContainerBig}>
+					{typeof textSmall === 'string' && <ReactMarkdown children={textBig} />}
+					{typeof textSmall === 'object' && textBig}
+				</div>
+			)}
 		</section>
 	)
 }

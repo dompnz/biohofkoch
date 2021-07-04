@@ -22,7 +22,7 @@ export default function Homepage() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 			<div className='mb-default'>
-				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
+				<ImageSection imageSrcSmall={attributes.galleryImage1} imageSrcBig={attributes.galleryImage2} />
 			</div>
 			<div className='mb-default'>
 				<Linkbox text={attributes.linkboxText} link={attributes.linkboxLink} />
