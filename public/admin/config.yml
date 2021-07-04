@@ -31,6 +31,12 @@ collections:
         file: 'content/startseite.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string' }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'] }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
+          - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Bild 1', name: 'image1', widget: 'image' }
+          - { label: 'Bild 2', name: 'image2', widget: 'image' }
       - label: 'Über uns'
         name: 'ueber-uns'
         file: 'content/ueber-uns.md'
@@ -128,8 +134,8 @@ collections:
             collapsed: false
             min: 1
             fields:
-              - { label: 'Dateiname', name: 'quantity', widget: 'string' }
-              - { label: 'Datei', name: 'file', widget: 'file' }
+              - { label: 'Dateiname', name: 'name', widget: 'string' }
+              - { label: 'Datei', name: 'path', widget: 'file' }
       - label: 'Kontakt'
         name: 'kontakt'
         file: 'content/kontakt.md'

@@ -5,7 +5,7 @@ import NavUnderlineSvg from '../animated_svgs/nav/underline'
 import NavSpacer from './nav-spacer'
 import styles from './navigation.module.scss'
 
-const navItems = [
+export const navItems = [
 	{
 		name: 'Über uns',
 		path: 'ueber-uns',

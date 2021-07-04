@@ -4,13 +4,8 @@ import HeroSection from '../components/hero_section'
 import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
 import ImageSection from '../components/image_section'
 import { attributes, react as MarkdownContent } from '../content/ueber-uns.md'
-import { useEffect } from 'react'
 
 export default function Page() {
-	useEffect(() => {
-		console.log(attributes)
-	})
-
 	return (
 		<Layout>
 			<Head>
@@ -45,7 +40,7 @@ export default function Page() {
 			<section className='mb-default container'>
 				<h2 className='header'>{attributes.title1}</h2>
 				<HeroUnderlineSvg />
-				<p className='lg:pl-[45%] lg:w-[27%]'>{attributes.text1}</p>
+				<p className='mb-default lg:pl-[45%] lg:w-[27%]'>{attributes.text1}</p>
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</section>
 
