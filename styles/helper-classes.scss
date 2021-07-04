@@ -36,5 +36,5 @@
 }
 
 .text-indented-desktop {
-	@apply lg:ml-[45%] lg:max-w-[520px];
+	@apply lg:ml-[45%] lg:max-w-[520px] relative; // needs a non square bracket last rule to prevent build error
 }
