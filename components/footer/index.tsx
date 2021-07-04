@@ -42,7 +42,7 @@ export default function Footer() {
 							<img src={attributesFooter.certificateImage1} alt='' width='60' height='80' className='object-contain mb-2' />
 							<img src={attributesFooter.certificateImage2} alt='' width='72' height='48' className='object-contain' />
 						</div>
-						<div>
+						<div className='ml-6 max-w-[134px]'>
 							<ReactMarkdown children={attributesFooter.certificatetext} />
 						</div>
 					</div>
