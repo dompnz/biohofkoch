@@ -3,7 +3,6 @@ import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import ImageSection from '../components/image_section'
 import Link from 'next/link'
-import { navItems } from '../components/navigation'
 import { attributes } from '../content/startseite.md'
 
 export default function Page() {
