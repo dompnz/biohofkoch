@@ -15,8 +15,12 @@ const navItems = [
 		path: 'suesse-knolle',
 	},
 	{
-		name: 'Hofladen & Gemüsekiste',
-		path: 'hofladen-gemuesekiste',
+		name: 'Bio-Frühkartoffeln',
+		path: 'bio-fruehkartoffeln',
+	},
+	{
+		name: 'Hofladen',
+		path: 'hofladen',
 	},
 	{
 		name: 'Presseartikel',

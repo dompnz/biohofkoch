@@ -13,10 +13,10 @@ export default function Page() {
 				{attributes.description && <meta name='description' content={attributes.description} />}
 				{attributes.heroImage && <meta property='og:image' content={attributes.heroImage} />}
 			</Head>
-			<div className='mb'>
+			<div className='mb-default'>
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
-			<div className='container mb'>
+			<div className='container mb-default'>
 				<ImageSection text1={attributes.galleryText} imageSrc2={attributes.galleryImage} />
 			</div>
 			<div className='container mb-default flex flex-col lg:flex-row'>
@@ -48,7 +48,7 @@ export default function Page() {
 					<ReactMarkdown children={attributes.shippingText2} />
 				</div>
 			</div>
-			<div className='container mb'>
+			<div className='container mb-default'>
 				<ImageSection imageSrc1={attributes.galleryImage1} imageSrc2={attributes.galleryImage2} />
 			</div>
 		</Layout>

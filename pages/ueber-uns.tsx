@@ -19,7 +19,7 @@ export default function Page() {
 				{attributes.description && <meta name='description' content={attributes.description} />}
 				{attributes.heroImage && <meta property='og:image' content={attributes.heroImage} />}
 			</Head>
-			<div className='mb'>
+			<div className='mb-default'>
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
