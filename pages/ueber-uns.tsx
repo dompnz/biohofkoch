@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
-import AboutUsProfile from '../components/about_us_profile'
-import Linkbox from '../components/linkbox'
+import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
 import ImageSection from '../components/image_section'
 import { attributes, react as MarkdownContent } from '../content/ueber-uns.md'
 import { useEffect } from 'react'
@@ -44,12 +43,23 @@ export default function Page() {
 			</div>
 
 			<section className='mb-default container'>
-				<Linkbox text={attributes.linkboxText} />
+				<h2 className='header'>{attributes.title1}</h2>
+				<HeroUnderlineSvg />
+				<p className='lg:pl-[45%] lg:w-[27%]'>{attributes.text1}</p>
+				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</section>
 
-			<div className='mb-default container'>
-				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
-			</div>
+			<section className='mb-default container'>
+				<ImageSection
+					textSmall={
+						<>
+							<h2 className='header mb-8'>{attributes.title2}</h2>
+							<p>{attributes.text2}</p>
+						</>
+					}
+					imageSrcBig={attributes.image3}
+				/>
+			</section>
 		</Layout>
 	)
 }
