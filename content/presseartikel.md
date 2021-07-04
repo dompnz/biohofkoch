@@ -1,8 +1,8 @@
 ---
 title: Presseartikel - Biohof Koch
-description: Presseartikel
+description: ""
 heroHeader: Presseartikel
-heroText: asd
+heroText: ""
 heroImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 files:
   - name: Titelseite Fachmagazin Landwirt
