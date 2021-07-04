@@ -34,3 +34,7 @@
 .mb-default {
 	@apply mb-8 lg:mb-24 xl:mb-32;
 }
+
+.text-indented-desktop {
+	@apply lg:ml-[45%] lg:max-w-[520px];
+}

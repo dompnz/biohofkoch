@@ -40,7 +40,7 @@ export default function Page() {
 			<section className='mb-default container'>
 				<h2 className='header'>{attributes.title1}</h2>
 				<HeroUnderlineSvg />
-				<p className='mb-default lg:pl-[45%] lg:w-[27%]'>{attributes.text1}</p>
+				<p className='mb-default mt-8 text-indented-desktop'>{attributes.text1}</p>
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</section>
 
