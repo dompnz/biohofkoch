@@ -16,7 +16,7 @@ galleryText: >-
   Anteil an Ballaststoffen, Zucker, Vitamin A, C, E und Kalium. In der Küche
   können die Knollen als Suppe, Haupt-speise, Beilage und sogar als Nachspeise
   verwendet werden z.B.: Süßkartoffelsuppe, Süßkartoffelspalten,
-  Ofen-Süßkartoffel, **Süßkartoffelauflauf.**
+  Ofen-Süßkartoffel, Süßkartoffelauflauf**.**
 
 
   Süßkartoffeln werden am besten dunkel, kühl und trocken bei 12 bis 15 °C gelagert.
