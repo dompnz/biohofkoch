@@ -3,14 +3,14 @@ title: Presseartikel - Biohof Koch
 description: ""
 heroHeader: Presseartikel
 heroText: ""
-heroImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+heroImage: uploads/presse.jpg
 files:
   - name: Titelseite Fachmagazin Landwirt
-    path: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+    path: uploads/titelseite-landwirt.jpg
   - name: Tips Braunau
-    path: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+    path: uploads/tips-braunau.jpg
   - name: Braunauer Rundschau
-    path: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+    path: uploads/artikel-braunauer-rundschau.jpg
   - name: Innviertler Nachrichten
-    path: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+    path: uploads/bericht-oo-nachrichten-vom-04.11.2020-2-.jpg
 ---
