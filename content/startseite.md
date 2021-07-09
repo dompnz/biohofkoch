@@ -7,7 +7,7 @@ heroText: Wir sind der Biohof Koch in Hochburg-Ach im Oberen Innviertel an der
   Grenze zu Burghausen. Wir betreiben einen Bio-Marktfruchtbetrieb und einen
   klein-strukturierten Bio-Gemüseanbau mit Direkt-vermarktung. Zusätzlich halten
   wir noch eine kleine feine Schar an Bio-Legehennen und vier Eseln.
-heroImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+heroImage: uploads/new.jpg
 backgroundimage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 title: Biohof Koch - echt saisonales Gemüse aus dem Innviertel
 image1: uploads/9935c41298de21200333859e895db947.jpg
