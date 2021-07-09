@@ -9,7 +9,7 @@ heroText: 2020 legten wir mit der Pflanzung von Süßkartoffeln „Süße Knolle
   erster Betrieb im Innviertel wagten wir den Anbau von Süßkartoffeln. Die
   Süßkartoffeln ist ein Windengewächs und mit den herkömmlichen Kartoffeln nicht
   verwandt.
-heroImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+heroImage: uploads/su-sseknolle.jpg
 galleryText: >-
   Die Süßkartoffeln gelten als das nährstoffreichste Gemüse und haben ein
   langanhaltendes Sättigungs-gefühl. Außerdem haben die Knollen einen hohen
@@ -20,7 +20,7 @@ galleryText: >-
 
 
   Süßkartoffeln werden am besten dunkel, kühl und trocken bei 12 bis 15 °C gelagert.
-galleryImage: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+galleryImage: uploads/23.10.2020_koch_augustin_landwirt-6.jpg
 shippingHeader: Versand
 shippingText1: Versand der Süßkartoffeln in Österreich und Deutschland Ende
   Oktober werden die vorbestellten Süßkartoffeln direkt zu Dir nach Hause
@@ -36,6 +36,6 @@ priceitems:
 shippingText2: |-
   Süßkartoffel Jungpflanzen sind im Hofladen Ende Mai erhältlich\
   2,50 € pro Stück
-galleryImage1: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
-galleryImage2: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+galleryImage1: uploads/jungpflanzen_su-sskartoffeln_klein.jpg
+galleryImage2: uploads/23.10.2020_koch_augustin_landwirt-43.jpg
 ---
