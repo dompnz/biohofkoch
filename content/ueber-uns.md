@@ -50,7 +50,7 @@ profiles:
     profileQuote: „Liebt kochen mit den gesunden selbsterzeugten Bio-Lebensmitteln.“
     profileImage: uploads/477c2db5c83faa7c7a6878c2fe7158e1.jpg
     profileSwitch: true
-image3: uploads/20210510_103402.jpg
+image3: uploads/markt.jpg
 linkboxText: Unser Biogemüse gibt es bei uns als
   [Gemüsekiste](/hofladen-gemuesekiste) und auf Märkten. Ein ausgewähltes
   Sortiment ist im Hofladen zu erwerben.
