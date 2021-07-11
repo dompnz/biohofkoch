@@ -6,8 +6,8 @@ contacttext: |-
   5122 Hochburg-Ach\
   AUSTRIA
 contacttitle2: Fragen?
-certificateImage1: uploads/gruppe-39.png
-certificateImage2: uploads/gruppe-38.png
+certificateImage1: uploads/mail-anhang2.jpg
+certificateImage2: uploads/mail-anhang.jpg
 certificatetext: |-
   AT-BIO-302\
   Österreichische Landwirtschaft
