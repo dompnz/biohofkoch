@@ -24,6 +24,6 @@ text1: >-
 
 
   Erhältlich sind unsere ersten Kartoffeln der Saison ab **Ende Juni**.
-image1: uploads/20210510_103402.jpg
+image1: uploads/fru-hkartoffeln2.jpg
 image2: uploads/201904294_326849859053994_6893794882162667265_n.jpg
 ---
