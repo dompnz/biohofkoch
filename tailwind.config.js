@@ -23,7 +23,7 @@ module.exports = {
 			},
 			fontSize: {
 				sm: ['0.875rem', '1.25rem'],
-				base: ['1rem', '1.875rem'],
+				base: ['1rem', '1.75rem'],
 				//profilequote: ["2.5rem", "2.8125rem"],
 				//profileheader: ["6.25rem", "10.3125rem"],
 				smallheader: ['2.5rem', '3.3125rem'],
@@ -37,6 +37,7 @@ module.exports = {
 					dark: '#262626',
 					stroke: '#161615',
 				},
+				black: '#262626',
 			},
 			backgroundImage: (theme) => ({
 				logo: "url('/assets/images/logo.svg')",

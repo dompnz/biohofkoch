@@ -38,7 +38,7 @@ export default function Navigation({ useNavSpacer = true }) {
 	const toggleButton = useRef(null)
 	const mobileMenu = useRef(null)
 	const nav = useRef(null)
-	const burgerLinesBaseStyles = 'absolute w-full h-[1px] left-1/2 -translate-x-1/2 bg-gray-dark transition-burgerline duration-300 transform'
+	const burgerLinesBaseStyles = 'absolute w-full h-[2px] left-1/2 -translate-x-1/2 bg-gray-dark transition-burgerline duration-300 transform'
 
 	const openMobileNav = () => {
 		mobileMenu.current.classList.remove('opacity-0', 'pointer-events-none', 'translate-x-full')
@@ -78,7 +78,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === '/' + navItem.path
 							return (
-								<span key={navItem.path} className='relative ml-6 subheader'>
+								<span key={navItem.path} className='relative ml-6 xl:ml-12 subheader'>
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
@@ -92,7 +92,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						ref={mobileMenu}
 						className='opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10'
 					>
-						<div className='container w-full h-full flex flex-col justify-center items-start sm:items-center'>
+						<div className='container w-full h-full flex flex-col justify-center items-center sm:items-center'>
 							{navItems.map((navItem) => {
 								const isCurrentPath = router.route === '/' + navItem.path
 								return (
@@ -114,8 +114,10 @@ export default function Navigation({ useNavSpacer = true }) {
 							toggleMobileNav()
 						}}
 					>
-						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 w-4/5` : '')}></div>
-						<div className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 w-4/5` : '')}></div>
+						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 -translate-y-1/2 w-4/5` : '')}></div>
+						<div
+							className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2 w-4/5` : '')}
+						></div>
 					</button>
 				</div>
 			</nav>

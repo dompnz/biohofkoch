@@ -24,7 +24,7 @@ export default function Page() {
 							<ImageSection
 								textSmall={
 									<>
-										<h2 className='header mb-8'>{profile.profileName}</h2>
+										<h2 className='header mb-4'>{profile.profileName}</h2>
 										<p>{profile.profileText}</p>
 										<p>{profile.profileQuote}</p>
 									</>
@@ -41,14 +41,14 @@ export default function Page() {
 				<h2 className='header'>{attributes.title1}</h2>
 				<HeroUnderlineSvg />
 				<p className='mb-default mt-8 text-indented-desktop'>{attributes.text1}</p>
-				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
+				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} switchedOnDesktop={true} />
 			</section>
 
 			<section className='mb-default container'>
 				<ImageSection
 					textSmall={
 						<>
-							<h2 className='header mb-8'>{attributes.title2}</h2>
+							<h2 className='header mb-4'>{attributes.title2}</h2>
 							<p>{attributes.text2}</p>
 						</>
 					}

@@ -6,7 +6,8 @@ import { attributes as attributesGeneral } from '../../content/general.md'
 export default function Footer() {
 	return (
 		<footer className='container'>
-			<div className='py-16 md:pb-32 flex flex-col md:flex-row border-t-3 border-black'>
+			<div className='w-full h-[3px] bg-black rounded-full'></div>
+			<div className='py-16 md:pb-32 flex flex-col md:flex-row'>
 				<div className={styles.column}>
 					<h3 className='font-handwriting text-smallheader mb-4'>{attributesFooter.contacttitle1}</h3>
 					<ReactMarkdown children={attributesFooter.contacttext} />

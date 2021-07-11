@@ -24,7 +24,7 @@ export default function Page() {
 					<img src='/assets/images/logo-suesse-knolle-with-border.svg' alt='Logo Süße Knolle' className='w-1/2 mb-10 lg:mb-0' />
 				</div>
 				<div className='lg:w-1/2'>
-					<h2 className='mb-6 header'>{attributes.shippingHeader}</h2>
+					<h2 className='mb-4 header'>{attributes.shippingHeader}</h2>
 					<ReactMarkdown children={attributes.shippingText1} className='mb-8' />
 					<div className='mb-8'>
 						<table>
@@ -38,7 +38,7 @@ export default function Page() {
 							<tbody>
 								{attributes.priceitems?.map((priceitem, index) => (
 									<tr key={index}>
-										<td className='pr-4'>{priceitem.quantity}</td>
+										<td className='pr-6'>{priceitem.quantity}</td>
 										<td>{priceitem.text}</td>
 									</tr>
 								))}

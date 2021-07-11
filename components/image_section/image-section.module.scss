@@ -12,7 +12,11 @@
 }
 
 .imageContainerSmall {
-	@apply mb-8 lg:mb-0;
+	@apply mb-8 lg:mb-0 w-2/3 lg:w-auto;
+}
+
+.imageContainerBig {
+	@apply mt-8 lg:mt-0 w-full lg:w-auto;
 }
 
 @screen lg {

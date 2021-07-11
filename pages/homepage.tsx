@@ -23,11 +23,13 @@ export default function Page() {
 
 			<div className='mb-default container'>
 				<Link href='/ueber-uns'>
-					<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black'>
-						<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>
-							Mehr über <span className='underline'>Uns</span>
-						</span>
-						<img src='/assets/images/arrow-right.svg' alt='arrow-right' />
+					<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
+						<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>Erfahre mehr über uns und unsere Märkte!</span>
+						<img
+							src='/assets/images/arrow-right.svg'
+							alt='arrow-right'
+							className='ml-auto transform lg:-translate-x-8 group-hover:translate-x-0 transition-transform duration-500'
+						/>
 					</a>
 				</Link>
 			</div>
