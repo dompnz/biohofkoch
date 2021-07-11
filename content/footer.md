@@ -6,8 +6,8 @@ contacttext: |-
   5122 Hochburg-Ach\
   AUSTRIA
 contacttitle2: Fragen?
-certificateImage1: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
-certificateImage2: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+certificateImage1: uploads/gruppe-39.png
+certificateImage2: uploads/gruppe-38.png
 certificatetext: |-
   AT-BIO-302\
   Österreichische Landwirtschaft
