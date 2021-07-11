@@ -20,8 +20,8 @@ text1: >-
 
 
   Unser kleinstrukturierter Gemüseanbau ist noch **reine Handarbeit**. Wir setzen, pflegen und ernten per Hand. Unser Biogemüse gibt es bei uns auf Märkten und im **Hofladen** zu erwerben. Mit unserem **abwechselnden Sortiment** möchten wir euch eine genussvolle Abwechslung bieten. Unser Gemüse stammt aus **100% Eigenproduktion**.
-image1: uploads/20210417_175322.jpg
-image2: uploads/aufgang-paprika.jpg
+image1: uploads/aufgang-paprika.jpg
+image2: uploads/20210417_175322.jpg
 title2: Märkte
 text2: >-
   Jeden **Samstag von 08:00 bis 12:00** Uhr am Bauernmarkt Burghausen am
