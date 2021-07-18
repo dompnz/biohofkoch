@@ -200,15 +200,16 @@ collections:
         name: 'general'
         file: 'content/general.md'
         fields:
-          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
+          - { label: 'Fallback Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
           - {
-              label: 'Beschreibung (Suchmaschine)',
+              label: 'Fallback Beschreibung (Suchmaschine)',
               name: 'description',
               widget: 'text',
               pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
               required: false,
             }
-          - { label: 'Bild (Teilen)', name: 'ogImage', widget: 'image', required: false }
+          - { label: 'Fallback Bild (Teilen)', name: 'ogImage', widget: 'image', required: false }
+          - { label: 'Logo (Navigation)', name: 'logoImage', widget: 'image' }
           - { label: 'Email', name: 'email', widget: 'string' }
           - { label: 'Telefonnummer', name: 'tel', widget: 'string' }
           - { label: 'Facebook Titel', name: 'facebooktitle', widget: 'string' }

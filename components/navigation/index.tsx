@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import NavUnderlineSvg from '../animated_svgs/nav/underline'
 import NavSpacer from './nav-spacer'
 import styles from './navigation.module.scss'
+import { attributes as attributesGeneral } from '../../content/general.md'
 
 export const navItems = [
 	{
@@ -69,9 +70,13 @@ export default function Navigation({ useNavSpacer = true }) {
 				<div className='container py-4 flex justify-between items-center'>
 					{/* logo */}
 					<Link href='/'>
-						<a
-							className={`${styles.logo} transition-square duration-300 bg-logo bg-center bg-contain bg-no-repeat w-16 h-16 2xl:w-32 2xl:h-32 flex-shrink-0 z-20`}
-						></a>
+						<a className={`${styles.logo} flex-shrink-0 z-20`}>
+							<img
+								src={attributesGeneral.logoImage}
+								alt='biohof koch logo'
+								className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full object-contain object-center'
+							/>
+						</a>
 					</Link>
 					{/* desktop menu */}
 					<div className='hidden lg:flex'>

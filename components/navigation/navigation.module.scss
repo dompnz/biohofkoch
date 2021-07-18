@@ -1,8 +1,19 @@
 .nav {
+	.logo {
+		@apply relative flex w-16 2xl:w-32 transition-square duration-300;
+
+		&::before {
+			content: '';
+			@apply w-full inline-flex;
+			$ratio: 1/1;
+			padding-bottom: 100% / $ratio;
+		}
+	}
+
 	&:global(.scrolled-down) {
 		.logo {
 			@screen lg {
-				@apply h-16 w-16;
+				@apply w-16;
 			}
 		}
 	}
