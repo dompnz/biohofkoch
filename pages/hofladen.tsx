@@ -16,7 +16,7 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
-			<div className='mb-default container'>
+			<div className='mb-default container last-p-no-mb'>
 				<ImageSection textSmall={attributes.text1} imageSrcBig={attributes.image1} />
 			</div>
 		</Layout>

@@ -1,11 +1,30 @@
-p {
-	&:not(:last-of-type) {
-		margin-bottom: 1rem;
+p,
+ul {
+	&:not(:last-child) {
+		@apply mb-4;
 	}
 }
 
 .p-no-mb {
 	p {
 		margin-bottom: 0;
+	}
+}
+
+.last-p-no-mb {
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+ul {
+	list-style-type: '-';
+	list-style-position: inside;
+
+	li {
+		&::before {
+			content: '';
+			@apply pr-2;
+		}
 	}
 }
