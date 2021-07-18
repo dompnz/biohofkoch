@@ -201,7 +201,7 @@ collections:
         name: 'general'
         file: 'content/general.md'
         fields:
-          - { label: 'Fallback Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
+          - { label: 'Fallback Titel Suffix (Suchmaschine)', name: 'titleSuffix', widget: 'string', required: false }
           - {
               label: 'Fallback Beschreibung (Suchmaschine)',
               name: 'description',
