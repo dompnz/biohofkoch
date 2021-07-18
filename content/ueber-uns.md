@@ -1,16 +1,10 @@
 ---
-title: Über uns - Biohof Koch
-description: Wir sind das Ehepaar Augustin und Lydia Koch und bewirtschaften
-  gemeinsam den Biohof Koch. Der Landwirtschaftsbetrieb wird seit 2001 nach den
-  Richtlinien für biologischen Landbau bewirtschaftet und ist Mitglied bei BIO
-  Austria.
 heroHeader: Über uns
 heroText: Wir sind das Ehepaar **Augustin und Lydia Koch** und bewirtschaften
   gemeinsam den **Biohof Koch**. Der Landwirtschaftsbetrieb wird seit 2001 nach
   den Richtlinien für **biologischen Landbau** bewirtschaftet und ist Mitglied
   bei BIO Austria.
 heroImage: uploads/gruppe-maskieren-1.jpg
-title1: Bio-Gemüse aus eigenem Anbau
 text1: >-
   Du willst mit uns durch die Gemüsesaison gehen? Perfekt! Wir produzieren das
   Bio-Gemüse nach dem Prinzip **„echt saisonal“**. Das heißt wir bieten nur das
@@ -20,9 +14,6 @@ text1: >-
 
 
   Unser kleinstrukturierter Gemüseanbau ist noch **reine Handarbeit**. Wir setzen, pflegen und ernten per Hand. Unser Biogemüse gibt es bei uns auf Märkten und im **Hofladen** zu erwerben. Mit unserem **abwechselnden Sortiment** möchten wir euch eine genussvolle Abwechslung bieten. Unser Gemüse stammt aus **100% Eigenproduktion**.
-image1: uploads/aufgang-paprika.jpg
-image2: uploads/20210417_175322.jpg
-title2: Märkte
 text2: >-
   Jeden **Samstag von 08:00 bis 12:00** Uhr am Bauernmarkt Burghausen am
   Bürgerplatz
@@ -38,6 +29,11 @@ text2: >-
   **Zweiter Freitag** im Monat Genussmarkt in **Duttendorf** (Hochburg-Ach)
 galleryImage1: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
 galleryImage2: uploads/23.10.2020_koch_augustin_landwirt-28.jpg
+title: ""
+description: Wir sind das Ehepaar Augustin und Lydia Koch und bewirtschaften
+  gemeinsam den Biohof Koch. Der Landwirtschaftsbetrieb wird seit 2001 nach den
+  Richtlinien für biologischen Landbau bewirtschaftet und ist Mitglied bei BIO
+  Austria.
 profiles:
   - profileName: Augustin Koch
     profileText: Der Bio-Bauer mit Leib und Seele Übernahm nach dem Studium an der
@@ -50,6 +46,10 @@ profiles:
     profileQuote: „Liebt kochen mit den gesunden selbsterzeugten Bio-Lebensmitteln.“
     profileImage: uploads/477c2db5c83faa7c7a6878c2fe7158e1.jpg
     profileSwitch: true
+title1: Bio-Gemüse aus eigenem Anbau
+image1: uploads/aufgang-paprika.jpg
+image2: uploads/20210417_175322.jpg
+title2: Märkte
 image3: uploads/markt.jpg
 linkboxText: Unser Biogemüse gibt es bei uns als
   [Gemüsekiste](/hofladen-gemuesekiste) und auf Märkten. Ein ausgewähltes
