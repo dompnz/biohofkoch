@@ -1,5 +1,5 @@
 ---
-title: Süße Knolle
+title: ""
 description: 2020 legten wir mit der Pflanzung von Süßkartoffeln „Süße Knolle –
   Süßkartoffeln aus dem Innviertel“ den Grundstein für unseren Gemüsebau. Als
   erster Betrieb im Innviertel wagten wir den Anbau von Süßkartoffeln.
