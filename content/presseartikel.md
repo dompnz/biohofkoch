@@ -1,5 +1,5 @@
 ---
-title: Presseartikel - Biohof Koch
+title: ""
 description: ""
 heroHeader: Presseartikel
 heroText: ""
