@@ -3,13 +3,11 @@ title: Hofladen - Biohof Koch
 description: Der Hofladen ist unsere Selbstbedienungsbasis und steh täglich von
   9 bis 19 Uhr zur verfügung.
 heroHeader: Hofladen
-heroText: Der Hofladen ist unsere Selbstbedienungsbasis und steh täglich von **9
-  bis 19 Uhr** zur verfügung.
+heroText: Der Hofladen ist unsere Selbstbedienungsbasis und steht täglich von
+  **9 bis 19 Uhr** zur Verfügung.
 heroImage: uploads/esel.jpg
 text1: |-
   Folgende Produkte im **Hofladen** zu erwerben:
-
-
 
   * Abwechselndes Sortiment an **Feingemüse**
   * **Frühkartoffeln** (ab Ende Juni)
@@ -17,8 +15,6 @@ text1: |-
   * **Süßkartoffeln** (ab Oktober)
   * Bio-Dinkelprodukte
   * Bio-Freilandeier von 50 Freilandlegehennen
-
-
 
   Bei größeren Mengen bitte um Vorbestellung:
 
