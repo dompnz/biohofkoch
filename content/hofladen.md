@@ -9,8 +9,9 @@ heroImage: uploads/esel.jpg
 text1: |-
   Folgende Produkte im **Hofladen** zu erwerben:
 
-  \- Abwechselndes Sortiment an **Feingemüse**
 
+
+  * Abwechselndes Sortiment an **Feingemüse**
   * **Frühkartoffeln** (ab Ende Juni)
   * Verschiedene **Kürbisse** (ab September)
   * **Süßkartoffeln** (ab Oktober)
@@ -21,6 +22,6 @@ text1: |-
 
   Bei größeren Mengen bitte um Vorbestellung:
 
-  * WhatsApp Nachricht, Anruf oder e-Mail
+  * WhatsApp Nachricht, Anruf oder Email
 image1: uploads/hofladen-innen.jpg
 ---
