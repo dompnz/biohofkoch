@@ -2,9 +2,16 @@ import CustomHead from '../components/custom_head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import { attributes } from '../content/presseartikel.md'
+import { useEffect, useRef } from 'react'
 
 export default function Page() {
 	const closeLinesBaseStyles = 'w-full h-[3px] absolute left-1/2 top-0 transform -translate-x-1/2 bg-gray-dark'
+	const fileItemParent = useRef(null)
+
+	useEffect(() => {
+		// add duration after component loaded to prevent seeing the overlay fly in on page reload
+		fileItemParent.current?.querySelectorAll('.image-overlay').forEach((imageOverlay) => imageOverlay.classList.add('duration-500'))
+	})
 
 	const fileClickHandler = (clickEvent) => {
 		const fileItem = clickEvent.currentTarget
@@ -29,7 +36,7 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
-			<div className='mb-default container flex flex-col gap-4 lg:flex-row lg:justify-between lg:flex-wrap'>
+			<div ref={fileItemParent} className='mb-default container flex flex-col gap-4 lg:flex-row lg:justify-between lg:flex-wrap'>
 				{attributes.files?.map((file) => {
 					const imageExtensions = ['jpg', 'jpeg', 'png', 'svg', 'webp']
 					const fileExtension = file.path.split('.').pop()
@@ -46,7 +53,7 @@ export default function Page() {
 							<span className='font-handwriting text-smallheader'>{file.name}</span>
 							<img src='/assets/images/arrow-right.svg' alt='arrow-right' className='w-16' />
 							{fileIsImage && (
-								<div className='image-overlay fixed top-0 left-0 w-full h-full bg-gray-bg z-30 duration-500 opacity-0 pointer-events-none transform translate-x-full'>
+								<div className='image-overlay fixed top-0 left-0 w-full h-full bg-gray-bg z-30 opacity-0 pointer-events-none transform translate-x-full'>
 									<div className='container h-full flex justify-center items-center'>
 										<div className='relative inline-flex'>
 											<img src={file.path} alt={file.name} className='w-full max-h-[84vh] object-contain object-center' />
