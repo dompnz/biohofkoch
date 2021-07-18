@@ -49,6 +49,7 @@ collections:
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
           - { label: 'Bild 1', name: 'image1', widget: 'image' }
           - { label: 'Bild 2', name: 'image2', widget: 'image' }
+          - { label: 'Link Box Text', name: 'linkboxText', widget: 'string' }
       - label: 'Über uns'
         name: 'ueber-uns'
         file: 'content/ueber-uns.md'

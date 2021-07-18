@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import ImageSection from '../components/image_section'
-import { attributes, react as MarkdownContent } from '../content/suesse-knolle.md'
+import { attributes } from '../content/suesse-knolle.md'
 import ReactMarkdown from 'react-markdown'
 
 export default function Page() {

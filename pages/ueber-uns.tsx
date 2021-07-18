@@ -3,7 +3,8 @@ import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
 import ImageSection from '../components/image_section'
-import { attributes, react as MarkdownContent } from '../content/ueber-uns.md'
+import { attributes } from '../content/ueber-uns.md'
+import ReactMarkdown from 'react-markdown'
 
 export default function Page() {
 	return (
@@ -25,8 +26,8 @@ export default function Page() {
 								textSmall={
 									<>
 										<h2 className='header mb-4'>{profile.profileName}</h2>
-										<p>{profile.profileText}</p>
-										<p>{profile.profileQuote}</p>
+										<ReactMarkdown children={profile.profileText} />
+										<ReactMarkdown children={profile.profileQuote} />
 									</>
 								}
 								imageSrcBig={profile.profileImage}
@@ -40,7 +41,7 @@ export default function Page() {
 			<section className='mb-default container'>
 				<h2 className='header'>{attributes.title1}</h2>
 				<HeroUnderlineSvg />
-				<p className='mb-default mt-8 text-indented-desktop'>{attributes.text1}</p>
+				<ReactMarkdown children={attributes.text1} className='mb-default mt-8 text-indented-desktop' />
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} switchedOnDesktop={true} />
 			</section>
 
@@ -49,7 +50,7 @@ export default function Page() {
 					textSmall={
 						<>
 							<h2 className='header mb-4'>{attributes.title2}</h2>
-							<p>{attributes.text2}</p>
+							<ReactMarkdown children={attributes.text2} />
 						</>
 					}
 					imageSrcBig={attributes.image3}

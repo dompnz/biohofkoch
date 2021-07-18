@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import { attributes } from '../content/kontakt.md'
 import { attributes as attributesGeneral } from '../content/general.md'
+import ReactMarkdown from 'react-markdown'
 
 export default function Page() {
 	return (
@@ -18,7 +19,7 @@ export default function Page() {
 					headerText={attributes.heroHeader}
 					bodyText={
 						<div>
-							<p>{attributes.heroText}</p>
+							<ReactMarkdown children={attributes.heroText} className='mb-4' />
 							<div>
 								<a href={`tel:${attributesGeneral.tel?.trim().replace(/[^0-9\+]+/g, '-')}`} className='animated-underline'>
 									{attributesGeneral.tel}

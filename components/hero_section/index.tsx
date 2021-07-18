@@ -1,5 +1,6 @@
 import styles from './hero-section.module.scss'
 import HeroUnderlineSvg from '../animated_svgs/hero/underline'
+import ReactMarkdown from 'react-markdown'
 
 export default function HeroSection({ imageSrc = '', headerText = '', bodyText = null }) {
 	return (
@@ -16,7 +17,10 @@ export default function HeroSection({ imageSrc = '', headerText = '', bodyText =
 					{headerText}
 				</h1>
 				<HeroUnderlineSvg />
-				<p className='mt-8 md:max-w-prose lg:max-w-[420px]'>{bodyText}</p>
+				<div className='mt-8 md:max-w-prose lg:max-w-[420px]'>
+					{typeof bodyText === 'string' && <ReactMarkdown children={bodyText} />}
+					{typeof bodyText === 'object' && bodyText}
+				</div>
 			</div>
 		</section>
 	)

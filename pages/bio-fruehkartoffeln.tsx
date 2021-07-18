@@ -4,6 +4,7 @@ import HeroSection from '../components/hero_section'
 import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
 import ImageSection from '../components/image_section'
 import { attributes } from '../content/bio-fruehkartoffeln.md'
+import ReactMarkdown from 'react-markdown'
 
 export default function Page() {
 	return (
@@ -20,7 +21,7 @@ export default function Page() {
 			<section className='mb-default container'>
 				<h2 className='header'>{attributes.title1}</h2>
 				<HeroUnderlineSvg />
-				<p className='mb-default mt-8 text-indented-desktop'>{attributes.text1}</p>
+				<ReactMarkdown children={attributes.text1} className='mb-default mt-8 text-indented-desktop' />
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</section>
 		</Layout>

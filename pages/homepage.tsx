@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import ImageSection from '../components/image_section'
 import Link from 'next/link'
+// import { attributes, react as MarkdownContent } to import the body of the markdown
 import { attributes } from '../content/startseite.md'
 
 export default function Page() {
@@ -24,7 +25,7 @@ export default function Page() {
 			<div className='mb-default container'>
 				<Link href='/ueber-uns'>
 					<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
-						<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>Erfahre mehr über uns und unsere Märkte!</span>
+						<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>{attributes.linkboxText}</span>
 						<img
 							src='/assets/images/arrow-right.svg'
 							alt='arrow-right'
