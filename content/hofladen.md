@@ -1,5 +1,5 @@
 ---
-title: Hofladen - Biohof Koch
+title: ""
 description: Der Hofladen ist unsere Selbstbedienungsbasis und steh täglich von
   9 bis 19 Uhr zur verfügung.
 heroHeader: Hofladen
