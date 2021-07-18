@@ -1,5 +1,5 @@
 ---
-title: Bio-Frühkartoffeln - Biohof Koch
+title: ""
 description: Die Frühkartoffelproduktion gilt als Königsdisziplin in der
   Kartoffelproduktion. Das Innviertel ist als „Heurigen“ Region bisher noch
   nicht bekannt. 2021 möchten wir das ändern. Dieses Jahr wurden die Sorten Red
