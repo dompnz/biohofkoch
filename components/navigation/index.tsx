@@ -79,11 +79,11 @@ export default function Navigation({ useNavSpacer = true }) {
 						</a>
 					</Link>
 					{/* desktop menu */}
-					<div className='hidden lg:flex'>
+					<div className='hidden lg:flex lg:gap-6 xl:gap-12'>
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === '/' + navItem.path
 							return (
-								<span key={navItem.path} className='relative ml-6 xl:ml-12 subheader'>
+								<span key={navItem.path} className='relative ubheader'>
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
@@ -97,11 +97,11 @@ export default function Navigation({ useNavSpacer = true }) {
 						ref={mobileMenu}
 						className='opacity-0 transform translate-x-full pointer-events-none lg:hidden duration-500 fixed top-0 left-0 w-full h-full bg-gray-bg z-10'
 					>
-						<div className='container w-full h-full flex flex-col justify-center items-center sm:items-center'>
+						<div className='container w-full h-full flex flex-col justify-center items-center gap-6'>
 							{navItems.map((navItem) => {
 								const isCurrentPath = router.route === '/' + navItem.path
 								return (
-									<span key={navItem.path} className='relative mb-6 last:mb-0 subheader'>
+									<span key={navItem.path} className='relative subheader'>
 										<Link href={`/${navItem.path}`}>
 											<a>{navItem.name}</a>
 										</Link>
