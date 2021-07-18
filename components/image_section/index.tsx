@@ -2,7 +2,6 @@ import styles from './image-section.module.scss'
 import ReactMarkdown from 'react-markdown'
 
 export default function ImageSection({ imageSrcSmall = '', imageSrcBig = '', textSmall = null, textBig = null, switchedOnDesktop = false }) {
-	console.log(typeof textSmall)
 	return (
 		<section className={`flex flex-col lg:flex-row items-center lg:justify-between ${switchedOnDesktop ? 'lg:flex-row-reverse' : ''}`}>
 			{textSmall && (
