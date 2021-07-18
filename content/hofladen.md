@@ -9,16 +9,12 @@ heroImage: uploads/esel.jpg
 text1: |-
   Folgende Produkte im **Hofladen** zu erwerben:
 
-
-
   * Abwechselndes Sortiment an **Feingemüse**
   * **Frühkartoffeln** (ab Ende Juni)
   * Verschiedene **Kürbisse** (ab September)
   * **Süßkartoffeln** (ab Oktober)
   * Bio-Dinkelprodukte
   * Bio-Freilandeier von 50 Freilandlegehennen
-
-
 
   Bei größeren Mengen bitte um Vorbestellung:
 
