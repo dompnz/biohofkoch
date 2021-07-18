@@ -1,5 +1,5 @@
 ---
-title: Kontakt - Biohof Koch
+title: ""
 heroHeader: Kontakt
 heroText: |-
   Biohof Koch
