@@ -83,7 +83,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						{navItems.map((navItem) => {
 							const isCurrentPath = router.route === '/' + navItem.path
 							return (
-								<span key={navItem.path} className='relative ubheader'>
+								<span key={navItem.path} className='relative subheader'>
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
