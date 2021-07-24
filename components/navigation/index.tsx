@@ -74,7 +74,7 @@ export default function Navigation({ useNavSpacer = true }) {
 							<img
 								src={attributesGeneral.logoImage}
 								alt='biohof koch logo'
-								className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full object-contain object-center'
+								className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-full w-full'
 							/>
 						</a>
 					</Link>
@@ -119,9 +119,9 @@ export default function Navigation({ useNavSpacer = true }) {
 							toggleMobileNav()
 						}}
 					>
-						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 -translate-y-1/2 w-4/5` : '')}></div>
+						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 -translate-y-1/2` : '')}></div>
 						<div
-							className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2 w-4/5` : '')}
+							className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2` : '')}
 						></div>
 					</button>
 				</div>

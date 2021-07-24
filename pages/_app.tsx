@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 				{/* background color for mobiles */}
 				<meta name='theme-color' content={tailwindConfig.theme.extend.colors.gray.bg} />
 			</Head>
-			<AnimatePresence exitBeforeEnter>
+			<AnimatePresence exitBeforeEnter initial={false}>
 				<Component {...pageProps} key={router.route} />
 			</AnimatePresence>
 		</div>

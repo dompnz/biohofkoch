@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 
 export default function Layout({ children, showNav = true, useNavSpacer = true, showFooter = true }) {
 	const variants = {
-		hidden: { opacity: 0, x: -500, y: 0 },
+		hidden: { opacity: 0, x: 0, y: 0 },
 		enter: { opacity: 1, x: 0, y: 0 },
-		exit: { opacity: 0, x: 500, y: 0 },
+		exit: { opacity: 0, x: 0, y: 0 },
 	}
 
 	return (
@@ -21,8 +21,8 @@ export default function Layout({ children, showNav = true, useNavSpacer = true, 
 				className='mb-auto'
 			>
 				{children}
+				{showFooter && <Footer />}
 			</motion.main>
-			{showFooter && <Footer />}
 		</div>
 	)
 }

@@ -12,14 +12,14 @@ export default function ImageSection({ imageSrcSmall = '', imageSrcBig = '', tex
 			)}
 			{imageSrcSmall && (
 				<div className={styles.imageContainerSmall}>
-					<div>
+					<div className='rounded-[3px] overflow-hidden'>
 						<img src={imageSrcSmall} alt='biohof koch stimmungsbild' />
 					</div>
 				</div>
 			)}
 			{imageSrcBig && (
 				<div className={styles.imageContainerBig}>
-					<div>
+					<div className='rounded-[3px] overflow-hidden'>
 						<img src={imageSrcBig} alt='biohof koch stimmungsbild' />
 					</div>
 				</div>

@@ -35,6 +35,10 @@
 	@apply mb-24 lg:mb-32 xl:mb-40 2xl:mb-60;
 }
 
+.mb-small {
+	@apply mb-12 lg:mb-16 xl:mb-20 2xl:mb-32;
+}
+
 .text-indented-desktop {
 	@apply lg:ml-[45%] lg:max-w-[520px] relative; // needs a non square bracket last rule to prevent build error
 }

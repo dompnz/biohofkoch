@@ -32,7 +32,7 @@ export default function Page() {
 				metaDescription={attributes.description}
 				ogImage={attributes.heroImage}
 			/>
-			<div className='mb-default'>
+			<div className='mb-small'>
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
 			</div>
 
@@ -46,12 +46,12 @@ export default function Page() {
 							key={file.name}
 							href={file.path}
 							target='_blank'
-							className='flex justify-between py-8 border-b-3 border-black lg:w-[44%]'
+							className='flex justify-between gap-3 py-8 border-b-3 border-black lg:w-[44%]'
 							onClick={fileClickHandler}
 							data-file-is-image={fileIsImage}
 						>
 							<span className='font-handwriting text-smallheader'>{file.name}</span>
-							<img src='/assets/images/arrow-right.svg' alt='arrow-right' className='w-16' />
+							<img src='/assets/images/arrow-right.svg' alt='arrow-right' className='w-12 lg:w-16' />
 							{fileIsImage && (
 								<div className='image-overlay fixed top-0 left-0 w-full h-full bg-gray-bg z-30 opacity-0 pointer-events-none transform translate-x-full'>
 									<div className='container h-full flex justify-center items-center'>
