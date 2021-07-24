@@ -5,6 +5,7 @@ import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
 import ImageSection from '../components/image_section'
 import { attributes } from '../content/ueber-uns.md'
 import ReactMarkdown from 'react-markdown'
+import FadeInWhenVisible from '../components/fade_in_when_visible'
 
 export default function Page() {
 	return (
@@ -40,9 +41,11 @@ export default function Page() {
 			</div>
 
 			<section className='mb-default container'>
-				<h2 className='header'>{attributes.title1}</h2>
-				<HeroUnderlineSvg />
-				<ReactMarkdown children={attributes.text1} className='mb-default mt-8 text-indented-desktop' />
+				<FadeInWhenVisible>
+					<h2 className='header'>{attributes.title1}</h2>
+					<HeroUnderlineSvg />
+					<ReactMarkdown children={attributes.text1} className='mb-default mt-8 text-indented-desktop' />
+				</FadeInWhenVisible>
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} switchedOnDesktop={true} />
 			</section>
 

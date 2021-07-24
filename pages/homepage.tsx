@@ -5,6 +5,7 @@ import ImageSection from '../components/image_section'
 import Link from 'next/link'
 // import { attributes, react as MarkdownContent } to import the body of the markdown
 import { attributes } from '../content/startseite.md'
+import FadeInWhenVisible from '../components/fade_in_when_visible'
 
 export default function Page() {
 	return (
@@ -24,16 +25,18 @@ export default function Page() {
 			</div>
 
 			<div className='mb-default container'>
-				<Link href='/ueber-uns'>
-					<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
-						<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>{attributes.linkboxText}</span>
-						<img
-							src='/assets/images/arrow-right.svg'
-							alt='arrow-right'
-							className='ml-auto transform lg:-translate-x-8 group-hover:translate-x-0 transition-transform duration-500'
-						/>
-					</a>
-				</Link>
+				<FadeInWhenVisible>
+					<Link href='/ueber-uns'>
+						<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
+							<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>{attributes.linkboxText}</span>
+							<img
+								src='/assets/images/arrow-right.svg'
+								alt='arrow-right'
+								className='ml-auto transform lg:-translate-x-8 group-hover:translate-x-0 transition-transform duration-500'
+							/>
+						</a>
+					</Link>
+				</FadeInWhenVisible>
 			</div>
 		</Layout>
 	)

@@ -57,6 +57,7 @@ module.exports = {
 				opacity: 'opacity',
 				burgerline: 'top, bottom, transform, width',
 				square: 'width, height',
+				fadein: 'opacity, transform',
 			},
 			width: {
 				'1/5': '20%',
