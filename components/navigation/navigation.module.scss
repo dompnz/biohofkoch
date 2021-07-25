@@ -1,6 +1,8 @@
 .nav {
+	@apply bg-transparent transition-colors duration-300;
+
 	.logo {
-		@apply relative flex w-16 2xl:w-32 transition-square duration-300;
+		@apply relative flex w-16 2xl:w-32 transition-width duration-300;
 
 		&::before {
 			content: '';
@@ -11,10 +13,10 @@
 	}
 
 	&:global(.scrolled-down) {
+		@apply bg-gray-bg;
+
 		.logo {
-			@screen lg {
-				@apply w-16;
-			}
+			@apply lg:w-16;
 		}
 	}
 }

@@ -21,3 +21,33 @@
 		}
 	}
 }
+
+.heroSection {
+	@screen lg {
+		--image-wrapper-width: (1086/1920);
+
+		.imageContainerWrapper {
+			width: calc(100% * var(--image-wrapper-width));
+		}
+
+		.textContainerWrapper {
+			width: calc(100% - 100% * var(--image-wrapper-width));
+		}
+
+		&:global(.scrollytelling) {
+			@apply h-screen max-w-none p-0;
+
+			.imageContainerWrapper {
+				@apply h-full;
+
+				.imageContainer {
+					@apply h-full;
+
+					& > div {
+						@apply h-full pb-0;
+					}
+				}
+			}
+		}
+	}
+}

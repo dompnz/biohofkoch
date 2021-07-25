@@ -3,12 +3,17 @@ import HeroUnderlineSvg from '../animated_svgs/hero/underline'
 import ReactMarkdown from 'react-markdown'
 import { motion, useReducedMotion } from 'framer-motion'
 
-export default function HeroSection({ imageSrc = '', headerText = '', bodyText = null }) {
+// TODO: add scrollytelling
+export default function HeroSection({ imageSrc = '', headerText = '', bodyText = null, scrollytelling = null }) {
 	const shouldReduceMotion = useReducedMotion()
 
 	return (
-		<section className='container flex flex-col lg:flex-row lg:items-center'>
-			<div className='lg:w-1/2 mb-8 lg:mb-0'>
+		<section
+			className={`${styles.heroSection} container flex flex-col lg:flex-row lg:items-center overflow-hidden ${
+				scrollytelling ? 'scrollytelling' : ''
+			}`}
+		>
+			<div className={`${styles.imageContainerWrapper} mb-8 lg:mb-0`}>
 				<div className={`${styles.imageContainer}`}>
 					<motion.div
 						initial={{ x: shouldReduceMotion ? 0 : -10 }}
@@ -20,8 +25,8 @@ export default function HeroSection({ imageSrc = '', headerText = '', bodyText =
 					</motion.div>
 				</div>
 			</div>
-			<div className='lg:w-1/2 lg:pl-32'>
-				<h1 className='font-handwriting text-6xl xl:text-8xl 2xl:text-hero transform lg:-translate-x-8 2xl:-translate-x-40 lg:w-[120%]'>
+			<div className={`${styles.textContainerWrapper} lg:pl-32 lg:-ml-16 2xl:ml-0`}>
+				<h1 className='font-handwriting text-6xl xl:text-8xl 2xl:text-hero transform lg:-translate-x-8 2xl:-translate-x-40 2xl:w-[132%]'>
 					{headerText}
 				</h1>
 				<HeroUnderlineSvg />

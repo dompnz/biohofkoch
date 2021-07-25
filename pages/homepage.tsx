@@ -9,7 +9,7 @@ import FadeInWhenVisible from '../components/fade_in_when_visible'
 
 export default function Page() {
 	return (
-		<Layout>
+		<Layout useNavSpacer={false}>
 			<CustomHead
 				metaTitlePrefix={attributes.heroHeader}
 				metaTitle={attributes.title}
@@ -17,7 +17,7 @@ export default function Page() {
 				ogImage={attributes.heroImage}
 			/>
 			<div className='mb-default'>
-				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} />
+				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} scrollytelling={true} />
 			</div>
 
 			<div className='mb-default container'>
