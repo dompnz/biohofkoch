@@ -3,7 +3,7 @@ title: ""
 description: ""
 heroHeader: Presseartikel
 heroText: ""
-heroImage: uploads/presse.jpg
+heroImage: uploads/9935c41298de21200333859e895db947.jpg
 files:
   - name: Titelseite Fachmagazin Landwirt
     path: uploads/titelseite-landwirt.jpg
