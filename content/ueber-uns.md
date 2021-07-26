@@ -9,7 +9,7 @@ heroText: Wir sind das Ehepaar **Augustin und Lydia Koch** und bewirtschaften
   gemeinsam den **Biohof Koch**. Der Landwirtschaftsbetrieb wird seit 2001 nach
   den Richtlinien für **biologischen Landbau** bewirtschaftet und ist Mitglied
   bei BIO Austria.
-heroImage: uploads/gruppe-maskieren-1.jpg
+heroImage: uploads/gruppe-maskieren-3.jpg
 title1: Bio-Gemüse aus eigenem Anbau
 text1: >-
   Du willst mit uns durch die Gemüsesaison gehen? Perfekt! Wir produzieren das
