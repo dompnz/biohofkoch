@@ -29,14 +29,14 @@ shippingText1: "**Versand** der Süßkartoffeln in **Österreich und Deutschland
 priceHeader: "Preise:"
 priceitems:
   - quantity: 5 kg
-    text: 35 € inkl. Versand
+    text: 35€ inkl. Versand
   - quantity: 10 kg
-    text: 60 € inkl. Versand
-  - text: 115 € inkl. Versand
+    text: 60€ inkl. Versand
+  - text: 110€ inkl. Versand
     quantity: 20 kg
 shippingText2: |-
   Süßkartoffel **Jungpflanzen** sind im Hofladen Ende Mai erhältlich\
-  2,50 € pro Stück
+  2,50€ pro Stück
 galleryImage1: uploads/jungpflanzen_su-sskartoffeln_klein.jpg
 galleryImage2: uploads/23.10.2020_koch_augustin_landwirt-43.jpg
 ---
