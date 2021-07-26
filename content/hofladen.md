@@ -5,7 +5,7 @@ description: Der Hofladen ist unsere Selbstbedienungsbasis und steh täglich von
 heroHeader: Hofladen
 heroText: Der Hofladen ist unsere Selbstbedienungsbasis und steht täglich von
   **9 bis 19 Uhr** zur Verfügung.
-heroImage: uploads/gruppe-maskieren-1.jpg
+heroImage: uploads/hofladen.jpg
 text1: |-
   Folgende Produkte im **Hofladen** zu erwerben:
 
@@ -19,5 +19,5 @@ text1: |-
   Bei größeren Mengen bitte um Vorbestellung:
 
   * WhatsApp Nachricht, Anruf oder Email
-image1: uploads/hofladen-innen.jpg
+image1: uploads/bild-hofladen.jpg
 ---
