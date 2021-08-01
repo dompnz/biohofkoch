@@ -1,5 +1,6 @@
 import Navigation from '../navigation'
 import Footer from '../footer'
+import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 export default function Layout({ children, showNav = true, useNavSpacer = true, showFooter = true }) {
@@ -10,6 +11,25 @@ export default function Layout({ children, showNav = true, useNavSpacer = true, 
 	} */
 	// note: currently the exit animation causes the Navigation / svg/underline components to rerender, causing the underline to redraw twice on exit and enter.
 	// no idea how to solve this. there is no callback for the exit animation from framer-motion, and preventing a rerender in react seems to only work as a performance optimization, you can't rely on it for functional purposes.
+
+	useEffect(() => {
+		scrollToHash()
+	})
+
+	const scrollToHash = () => {
+		const path = window.location.hash
+		if (!path || !path.includes('#')) return
+		const id = path.replace('#', '')
+		const el = document.getElementById(id)
+		if (!el) return
+		const scrollMarginTop = parseInt(getComputedStyle(el).scrollMarginTop)
+		setTimeout(() => {
+			window.scrollTo({
+				top: el.offsetTop - scrollMarginTop,
+				behavior: 'smooth',
+			})
+		}, 1)
+	}
 
 	return (
 		<div className='flex flex-col min-h-screen'>

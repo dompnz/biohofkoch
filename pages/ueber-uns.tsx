@@ -50,7 +50,7 @@ export default function Page() {
 			</section>
 
 			{/* use height of navigation / nav-spacer for scroll-margin */}
-			<section className='mb-default container' id='maerkte' style={{ scrollMargin: '100px' }}>
+			<section className='mb-default container' id='maerkte' style={{ scrollMarginTop: '100px' }}>
 				<ImageSection
 					textSmall={
 						<>

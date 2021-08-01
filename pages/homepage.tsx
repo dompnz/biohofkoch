@@ -39,7 +39,7 @@ export default function Page() {
 
 			<section className='mb-default container'>
 				<FadeInWhenVisible>
-					<Link href='/ueber-uns#maerkte' scroll={false}>
+					<Link href='/ueber-uns#maerkte'>
 						<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
 							<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>{attributes.linkboxText}</span>
 							<img

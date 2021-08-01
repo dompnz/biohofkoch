@@ -1,7 +1,6 @@
 import '../styles/globals.scss'
 import Head from 'next/head'
 import { AnimatePresence } from 'framer-motion'
-
 import type { AppProps /*, AppContext */ } from 'next/app'
 import tailwindConfig from '../tailwind.config'
 
