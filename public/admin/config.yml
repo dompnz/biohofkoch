@@ -22,13 +22,7 @@ collections:
         preview_path: '/'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Hintergrundbild', name: 'backgroundimage', widget: 'image', media_library: { config: { multiple: true } } }
           - { label: 'Kontaktdaten', name: 'body', widget: 'markdown' }
           - { label: 'Facebook Link', name: 'facebooklink', widget: 'string' }
@@ -37,16 +31,13 @@ collections:
         file: 'content/startseite.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+          - { label: 'Infotext anzeigen', name: 'showInfotext', widget: 'boolean', default: false, required: false }
+          - { label: 'Infotext Titel', name: 'infotextTitle', widget: 'string' }
+          - { label: 'Infotext', name: 'infotext', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Bild 1', name: 'image1', widget: 'image' }
           - { label: 'Bild 2', name: 'image2', widget: 'image' }
           - { label: 'Link Box Text', name: 'linkboxText', widget: 'string' }
@@ -55,13 +46,7 @@ collections:
         file: 'content/ueber-uns.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
@@ -90,13 +75,7 @@ collections:
         file: 'content/suesse-knolle.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
@@ -123,13 +102,7 @@ collections:
         file: 'content/bio-fruehkartoffeln.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
@@ -142,13 +115,7 @@ collections:
         file: 'content/hofladen.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
@@ -159,13 +126,7 @@ collections:
         file: 'content/presseartikel.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [], required: false }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
@@ -184,13 +145,7 @@ collections:
         file: 'content/kontakt.md'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
-          - {
-              label: 'Beschreibung (Suchmaschine)',
-              name: 'description',
-              widget: 'text',
-              pattern: ['.{0,160}', 'Maximal 160 Zeichen'],
-              required: false,
-            }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }

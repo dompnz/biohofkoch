@@ -87,7 +87,7 @@ export default function Navigation({ useNavSpacer = true }) {
 									<Link href={`/${navItem.path}`}>
 										<a>{navItem.name}</a>
 									</Link>
-									<span className='absolute -bottom-2 left-0 w-full'>{isCurrentPath && <NavUnderlineSvg />}</span>
+									<span className='absolute -bottom-2 left-1/2 transform -translate-x-1/2'>{isCurrentPath && <NavUnderlineSvg />}</span>
 								</span>
 							)
 						})}
@@ -105,7 +105,7 @@ export default function Navigation({ useNavSpacer = true }) {
 										<Link href={`/${navItem.path}`}>
 											<a>{navItem.name}</a>
 										</Link>
-										<span className='absolute -bottom-1 left-0 w-full'>{isCurrentPath && <NavUnderlineSvg />}</span>
+										<span className='absolute -bottom-1 left-1/2 transform -translate-x-1/2'>{isCurrentPath && <NavUnderlineSvg />}</span>
 									</span>
 								)
 							})}
@@ -120,9 +120,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						}}
 					>
 						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 -translate-y-1/2` : '')}></div>
-						<div
-							className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2` : '')}
-						></div>
+						<div className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2` : '')}></div>
 					</button>
 				</div>
 			</nav>

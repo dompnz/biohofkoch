@@ -6,6 +6,8 @@ import Link from 'next/link'
 // import { attributes, react as MarkdownContent } to import the body of the markdown
 import { attributes } from '../content/startseite.md'
 import FadeInWhenVisible from '../components/fade_in_when_visible'
+import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
+import ReactMarkdown from 'react-markdown'
 
 export default function Page() {
 	return (
@@ -20,11 +22,22 @@ export default function Page() {
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} scrollytelling={true} />
 			</div>
 
+			{/* optional infotext */}
+			{attributes.showInfotext && (
+				<FadeInWhenVisible>
+					<section className='mb-default container'>
+						<h2 className='header'>{attributes.infotextTitle}</h2>
+						<HeroUnderlineSvg />
+						<ReactMarkdown children={attributes.infotext} className='mb-default mt-8 text-indented-desktop' />
+					</section>
+				</FadeInWhenVisible>
+			)}
+
 			<div className='mb-default container'>
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} />
 			</div>
 
-			<div className='mb-default container'>
+			<section className='mb-default container'>
 				<FadeInWhenVisible>
 					<Link href='/ueber-uns'>
 						<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
@@ -37,7 +50,7 @@ export default function Page() {
 						</a>
 					</Link>
 				</FadeInWhenVisible>
-			</div>
+			</section>
 		</Layout>
 	)
 }

@@ -1,20 +1,20 @@
 .imageContainer {
-	--desktopOffset: 0;
-	width: calc(100% + var(--desktopOffset, 0));
-	transform: translateX(calc(var(--desktopOffset, 0) * (-1)));
+	--desktop-offset: 0;
+	--hero-image-ratio: (852/734);
+	width: calc(100% + var(--desktop-offset, 0));
+	transform: translateX(calc(var(--desktop-offset, 0) * (-1)));
 
 	@screen lg {
-		--desktopOffset: 2rem;
+		--desktop-offset: 2rem;
 	}
 
 	@screen 2xl {
-		--desktopOffset: 4rem;
+		--desktop-offset: 4rem;
 	}
 
 	& > div {
 		@apply relative w-full h-0;
-		$ratio: 852/734;
-		padding-bottom: 100% / $ratio;
+		padding-bottom: calc(100% / var(--hero-image-ratio));
 
 		img {
 			@apply absolute w-full h-full object-cover object-center;
@@ -23,20 +23,23 @@
 }
 
 .heroSection {
-	@screen lg {
-		--image-wrapper-width: (1086/1920);
+	&:global(.scrollytelling) {
+		@apply max-w-none p-0 lg:h-screen;
 
-		.imageContainerWrapper {
-			width: calc(100% * var(--image-wrapper-width));
+		.imageContainer {
+			--hero-image-ratio: (1/1);
+
+			@screen sm {
+				--hero-image-ratio: (16/14);
+			}
+
+			@screen md {
+				--hero-image-ratio: (16/12);
+			}
 		}
 
-		.textContainerWrapper {
-			width: calc(100% - 100% * var(--image-wrapper-width));
-		}
-
-		&:global(.scrollytelling) {
-			@apply h-screen max-w-none p-0;
-
+		@screen lg {
+			// use full height instead of image-ratio dependant height
 			.imageContainerWrapper {
 				@apply h-full;
 
@@ -48,6 +51,18 @@
 					}
 				}
 			}
+		}
+	}
+
+	@screen lg {
+		--image-wrapper-width: (1086/1920);
+
+		.imageContainerWrapper {
+			width: calc(100% * var(--image-wrapper-width));
+		}
+
+		.textContainerWrapper {
+			width: calc(100% - 100% * var(--image-wrapper-width));
 		}
 	}
 }

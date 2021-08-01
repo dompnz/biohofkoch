@@ -1,11 +1,8 @@
 import CustomHead from '../components/custom_head'
-import { useEffect } from 'react'
 import { attributes, react as MarkdownContent } from '../content/platzhalter.md'
 import Layout from '../components/layout'
 
 export default function Placeholder() {
-	useEffect(() => {})
-
 	return (
 		<Layout showNav={false} showFooter={false}>
 			<CustomHead
