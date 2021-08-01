@@ -9,7 +9,7 @@ export default function HeroSection({ imageSrc = '', headerText = '', bodyText =
 
 	return (
 		<section className={`${styles.heroSection} container flex flex-col lg:flex-row lg:items-center overflow-hidden ${scrollytelling ? 'scrollytelling' : ''}`}>
-			<div className={`${styles.imageContainerWrapper} mb-8 lg:mb-0`}>
+			<div className={`${styles.imageContainerWrapper} mb-8 sm:mb-12 md:mb-16 lg:mb-0`}>
 				<div className={`${styles.imageContainer}`}>
 					<motion.div
 						initial={{ x: shouldReduceMotion ? 0 : -10 }}

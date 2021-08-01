@@ -11,7 +11,7 @@ export default function NavUnderlineSvg() {
 	}, [pathTotalLength]) // only re-run the effect if length changes
 
 	return (
-		<svg xmlns='http://www.w3.org/2000/svg' width='299.428' height='3.965' viewBox='0 0 299.428 3.965' className='w-1/2'>
+		<svg xmlns='http://www.w3.org/2000/svg' width='299.428' height='3.965' viewBox='0 0 299.428 3.965' className='w-1/2 sm:w-1/4 lg:w-1/2'>
 			<path
 				ref={svgPath}
 				className={`stroke-current text-black animate-draw-stroke`}

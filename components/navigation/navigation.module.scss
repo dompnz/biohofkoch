@@ -2,7 +2,7 @@
 	@apply bg-transparent transition-colors duration-300;
 
 	.logo {
-		@apply relative flex w-16 2xl:w-32 transition-width duration-300;
+		@apply relative flex w-12 sm:w-16 2xl:w-32 transition-width duration-300;
 
 		&::before {
 			content: '';

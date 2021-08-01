@@ -27,7 +27,7 @@ export default function Page() {
 							<ImageSection
 								textSmall={
 									<>
-										<h2 className='header mb-4'>{profile.profileName}</h2>
+										<h2 className='text-6xl xl:text-header font-handwriting mb-4'>{profile.profileName}</h2>
 										<ReactMarkdown children={profile.profileText} />
 										<ReactMarkdown children={profile.profileQuote} />
 									</>
@@ -49,7 +49,8 @@ export default function Page() {
 				<ImageSection imageSrcSmall={attributes.image1} imageSrcBig={attributes.image2} switchedOnDesktop={true} />
 			</section>
 
-			<section className='mb-default container'>
+			{/* use height of navigation / nav-spacer for scroll-margin */}
+			<section className='mb-default container' id='maerkte' style={{ scrollMargin: '100px' }}>
 				<ImageSection
 					textSmall={
 						<>

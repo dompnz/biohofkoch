@@ -19,12 +19,9 @@ ul {
 
 ul {
 	list-style-type: '-';
-	list-style-position: inside;
+	list-style-position: outside;
 
 	li {
-		&::before {
-			content: '';
-			@apply pr-2;
-		}
+		@apply ml-2 pl-2;
 	}
 }

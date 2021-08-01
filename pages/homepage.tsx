@@ -18,7 +18,7 @@ export default function Page() {
 				metaDescription={attributes.description}
 				ogImage={attributes.heroImage}
 			/>
-			<div className='mb-default'>
+			<div className={`${attributes.showInfotext ? 'mb-12 sm:mb-16 lg:mb-24 xl:mb-20 2xl:mb-40' : 'mb-default'}`}>
 				<HeroSection imageSrc={attributes.heroImage} headerText={attributes.heroHeader} bodyText={attributes.heroText} scrollytelling={true} />
 			</div>
 
@@ -39,7 +39,7 @@ export default function Page() {
 
 			<section className='mb-default container'>
 				<FadeInWhenVisible>
-					<Link href='/ueber-uns'>
+					<Link href='/ueber-uns#maerkte' scroll={false}>
 						<a className='flex justify-between flex-wrap gap-4 p-10 lg:py-20 lg:px-24 border-3 border-black rounded-sm group'>
 							<span className='font-handwriting text-4xl lg:text-6xl lg:ml-5'>{attributes.linkboxText}</span>
 							<img

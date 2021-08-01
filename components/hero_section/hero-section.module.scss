@@ -17,7 +17,8 @@
 		padding-bottom: calc(100% / var(--hero-image-ratio));
 
 		img {
-			@apply absolute w-full h-full object-cover object-center;
+			@apply absolute w-full h-full object-cover;
+			object-position: center top;
 		}
 	}
 }
