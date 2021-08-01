@@ -22,6 +22,7 @@ export default function Layout({ children, showNav = true, useNavSpacer = true, 
 		const id = path.replace('#', '')
 		const el = document.getElementById(id)
 		if (!el) return
+		// @ts-ignore: Property 'scrollMarginTop' does not exist on type 'CSSStyleDeclaration'. see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-6.html#suppress-errors-in-ts-files-using--ts-ignore-comments
 		const scrollMarginTop = parseInt(getComputedStyle(el).scrollMarginTop)
 		setTimeout(() => {
 			window.scrollTo({
