@@ -19,7 +19,6 @@ collections:
       - label: 'Platzhalter'
         name: 'platzhalter'
         file: 'content/platzhalter.md'
-        preview_path: '/'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
           - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
@@ -29,6 +28,7 @@ collections:
       - label: 'Startseite'
         name: 'startseite'
         file: 'content/startseite.md'
+        preview_path: '/'
         fields:
           - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
           - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
