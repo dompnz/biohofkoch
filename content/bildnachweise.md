@@ -1,4 +1,4 @@
 ---
 heroHeader: Bildnachweise
-heroText: Hier erscheinen bald die Bildnachweise für die Webseite.
+heroText: "Fotograf: Johann Zehner"
 ---
