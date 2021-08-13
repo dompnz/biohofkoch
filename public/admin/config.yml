@@ -149,6 +149,14 @@ collections:
           - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
           - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
           - { label: 'Einleitungsbild', name: 'heroImage', widget: 'image' }
+      - label: 'Bildnachweise'
+        name: 'bildnachweise'
+        file: 'content/bildnachweise.md'
+        fields:
+          - { label: 'Titel (Suchmaschine)', name: 'title', widget: 'string', required: false }
+          - { label: 'Beschreibung (Suchmaschine)', name: 'description', widget: 'text', pattern: ['.{0,160}', 'Maximal 160 Zeichen'], required: false }
+          - { label: 'Einleitungstitel', name: 'heroHeader', widget: 'string' }
+          - { label: 'Einleitungstext', name: 'heroText', widget: 'markdown', modes: ['rich_text'], editor_components: [] }
   - label: 'Allgemein'
     name: 'general'
     files:

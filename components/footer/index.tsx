@@ -2,6 +2,7 @@ import ReactMarkdown from 'react-markdown'
 import styles from './footer.module.scss'
 import { attributes as attributesFooter } from '../../content/footer.md'
 import { attributes as attributesGeneral } from '../../content/general.md'
+import Link from 'next/link'
 
 export default function Footer() {
 	return (
@@ -26,13 +27,7 @@ export default function Footer() {
 					</div>
 					<div className='mt-7'>
 						<a href={attributesGeneral.facebooklink} target='_blank' rel='noreferrer' className='flex items-center flex-wrap'>
-							<img
-								src='/assets/images/facebook.svg'
-								alt='facebook icon'
-								width='22px'
-								height='22px'
-								className='inline mr-5 object-contain object-center'
-							/>
+							<img src='/assets/images/facebook.svg' alt='facebook icon' width='22px' height='22px' className='inline mr-5 object-contain object-center' />
 							<span className='subheader text-sm'>{attributesGeneral.facebooktitle}</span>
 						</a>
 					</div>
@@ -46,6 +41,11 @@ export default function Footer() {
 						<div className='ml-6 max-w-[134px]'>
 							<ReactMarkdown children={attributesFooter.certificatetext} />
 						</div>
+					</div>
+					<div className='mt-7'>
+						<Link href='/bildnachweise'>
+							<a className='animated-underline'>Bildnachweise</a>
+						</Link>
 					</div>
 				</div>
 			</div>
