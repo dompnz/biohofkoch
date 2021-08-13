@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 			<Head>
 				<meta property='og:type' content='website' />
 				<meta property='og:locale' content='de_AT' />
+				<link rel='icon' type='image/png' href='/favicon.png' />
 				{/* background color for mobiles */}
 				<meta name='theme-color' content={tailwindConfig.theme.extend.colors.gray.bg} />
 			</Head>
