@@ -2,7 +2,8 @@ import CustomHead from '../components/custom_head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
-import ImageSection from '../components/image_section'
+import dynamic from 'next/dynamic'
+const ImageSection = dynamic(() => import('../components/image_section'))
 import { attributes } from '../content/bio-fruehkartoffeln.md'
 import ReactMarkdown from 'react-markdown'
 

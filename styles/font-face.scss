@@ -1,7 +1,7 @@
 @use "./abstracts" as *;
 
 $font-family-name-zooja: "Zooja"; // can be anything since we self host this
-$font-display-default: auto;
+$font-display-default: block;
 
 // url encoded value for the characters you use so we only download those. https://developers.google.com/fonts/docs/css2#optimizing_your_font_requests
 // add missing characters with this: https://www.urlencoder.org/

@@ -118,6 +118,7 @@ export default function Navigation({ useNavSpacer = true }) {
 						onClick={() => {
 							toggleMobileNav()
 						}}
+						aria-label="navigation toggle"
 					>
 						<div className={burgerLinesBaseStyles + ' ' + 'top-0' + ' ' + (isMobileNavOpen ? `-rotate-45 top-1/2 -translate-y-1/2` : '')}></div>
 						<div className={burgerLinesBaseStyles + ' ' + 'bottom-0' + ' ' + (isMobileNavOpen ? `rotate-45 bottom-1/2 translate-y-1/2` : '')}></div>

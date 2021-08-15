@@ -1,7 +1,8 @@
 import CustomHead from '../components/custom_head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
-import ImageSection from '../components/image_section'
+import dynamic from 'next/dynamic'
+const ImageSection = dynamic(() => import('../components/image_section'))
 import { attributes } from '../content/hofladen.md'
 
 export default function Page() {

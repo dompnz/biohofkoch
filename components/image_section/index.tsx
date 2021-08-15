@@ -1,6 +1,7 @@
 import styles from './image-section.module.scss'
 import ReactMarkdown from 'react-markdown'
-import FadeInWhenVisible from '../fade_in_when_visible'
+import dynamic from 'next/dynamic'
+const FadeInWhenVisible = dynamic(() => import('../fade_in_when_visible'))
 
 export default function ImageSection({ imageSrcSmall = '', imageSrcBig = '', textSmall = null, textBig = null, switchedOnDesktop = false }) {
 	return (

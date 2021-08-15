@@ -2,10 +2,11 @@ import CustomHead from '../components/custom_head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
 import HeroUnderlineSvg from '../components/animated_svgs/hero/underline'
-import ImageSection from '../components/image_section'
 import { attributes } from '../content/ueber-uns.md'
 import ReactMarkdown from 'react-markdown'
-import FadeInWhenVisible from '../components/fade_in_when_visible'
+import dynamic from 'next/dynamic'
+const FadeInWhenVisible = dynamic(() => import('../components/fade_in_when_visible'))
+const ImageSection = dynamic(() => import('../components/image_section'))
 
 export default function Page() {
 	return (

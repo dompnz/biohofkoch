@@ -10,17 +10,17 @@ export default function Footer() {
 			<div className='w-full h-[3px] bg-black rounded-full'></div>
 			<div className='py-16 md:pb-32 flex flex-col md:flex-row'>
 				<div className={styles.column}>
-					<h3 className='font-handwriting text-smallheader mb-4'>{attributesFooter.contacttitle1}</h3>
+					<h2 className='font-handwriting text-smallheader mb-4'>{attributesFooter.contacttitle1}</h2>
 					<ReactMarkdown children={attributesFooter.contacttext} />
 				</div>
 				<div className={styles.column}>
-					<h3 className='font-handwriting text-smallheader mb-4'>{attributesFooter.contacttitle2}</h3>
-					<div>
+					<h2 className='font-handwriting text-smallheader mb-4'>{attributesFooter.contacttitle2}</h2>
+					<div className='mb-3 md:mb-0'>
 						<a href={`tel:${attributesGeneral.tel?.trim().replace(/[^0-9\+]+/g, '-')}`} className='animated-underline'>
 							{attributesGeneral.tel}
 						</a>
 					</div>
-					<div>
+					<div className='mb-3 md:mb-0'>
 						<a href={`mailto:${attributesGeneral.email}`} className='animated-underline'>
 							{attributesGeneral.email}
 						</a>

@@ -1,10 +1,11 @@
 import CustomHead from '../components/custom_head'
 import Layout from '../components/layout'
 import HeroSection from '../components/hero_section'
-import ImageSection from '../components/image_section'
 import { attributes } from '../content/suesse-knolle.md'
 import ReactMarkdown from 'react-markdown'
-import FadeInWhenVisible from '../components/fade_in_when_visible'
+import dynamic from 'next/dynamic'
+const ImageSection = dynamic(() => import('../components/image_section'))
+const FadeInWhenVisible = dynamic(() => import('../components/fade_in_when_visible'))
 
 export default function Page() {
 	return (
